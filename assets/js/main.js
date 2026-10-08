@@ -21,3 +21,35 @@ if (siteHeader) {
         }
     });
 }
+
+
+
+// =============================
+// MÉTODO DA AGÊNCIA NO TELEMÓVEL
+// =============================
+
+// Atualiza o contador enquanto se desliza entre as etapas.
+const methodGrid = document.getElementById('method-grid');
+const methodCounter = document.getElementById('method-counter');
+
+if (methodGrid && methodCounter) {
+    methodGrid.addEventListener('scroll', function () {
+        const cards = methodGrid.querySelectorAll('.method-card');
+        const middle = methodGrid.scrollLeft + methodGrid.clientWidth / 2;
+
+        let activeIndex = 0;
+        let smallestDistance = Infinity;
+
+        cards.forEach(function (card, index) {
+            const cardMiddle = card.offsetLeft + card.offsetWidth / 2;
+            const distance = Math.abs(cardMiddle - middle);
+
+            if (distance < smallestDistance) {
+                smallestDistance = distance;
+                activeIndex = index;
+            }
+        });
+
+        methodCounter.textContent = String(activeIndex + 1).padStart(2, '0') + ' / ' + String(cards.length).padStart(2, '0');
+    });
+}

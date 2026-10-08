@@ -34,7 +34,7 @@ if (!isset($currentPage)) {
         </nav>
 
         <!-- Botão de contacto -->
-        <a class="nav-contact" href="<?php echo $basePath; ?>pages/contact/contact.php">
+        <a class="nav-contact <?php echo $currentPage === 'contact' ? 'contact-active' : ''; ?>" href="<?php echo $basePath; ?>pages/contact/contact.php">
             <span>Parlons de votre projet</span>
             <span aria-hidden="true">↗</span>
         </a>

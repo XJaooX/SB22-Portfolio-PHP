@@ -770,3 +770,231 @@ img {
     border-radius: 3px;
     background: var(--navy);
 }
+
+
+/* ============================= */
+/* PÁGINA L'AGENCE                */
+/* ============================= */
+
+/* Primeira parte da página com o título e uma pequena descrição */
+.agency-intro {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 150px 48px 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: end;
+}
+
+.agency-intro h1 {
+    margin: 14px 0 0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.agency-intro h1 span {
+    display: block;
+    font-style: italic;
+}
+
+.agency-intro-text {
+    max-width: 520px;
+    color: rgba(4, 15, 37, 0.72);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ============================= */
+/* VALORES DA AGÊNCIA             */
+/* ============================= */
+
+/* Grelha com os quatro valores principais */
+.agency-values {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 48px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    border-top: 1px solid var(--grey);
+}
+
+.value-card {
+    padding-top: 24px;
+}
+
+.card-number {
+    margin: 0 0 10px;
+    color: rgba(4, 15, 37, 0.4);
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.value-card h2,
+.method-card h3 {
+    margin: 0 0 8px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+}
+
+.value-card h2 {
+    font-size: 28px;
+}
+
+.value-card > p:last-child,
+.method-card > p:last-child {
+    margin: 0;
+    color: rgba(4, 15, 37, 0.68);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* MÉTODO DE TRABALHO             */
+/* ============================= */
+
+.agency-method {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 72px 48px 96px;
+}
+
+.method-heading {
+    margin-bottom: 44px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.method-heading h2 {
+    margin: 12px 0 0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.method-heading > p {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(4, 15, 37, 0.65);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.method-card {
+    padding-top: 24px;
+    border-top: 1px solid rgba(4, 15, 37, 0.18);
+}
+
+.method-card h3 {
+    font-size: 27px;
+}
+
+
+/* ============================= */
+/* L'AGENCE - RESPONSIVE          */
+/* ============================= */
+
+@media (max-width: 900px) {
+    .agency-intro {
+        padding: 120px 24px 48px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .agency-intro h1 {
+        font-size: 46px;
+    }
+
+    .agency-values {
+        padding: 28px 24px 64px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .agency-method {
+        padding: 56px 24px 72px;
+    }
+
+    .method-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .method-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .agency-intro h1 {
+        font-size: 38px;
+    }
+
+    .agency-values,
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .method-heading h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* Indicador do carrossel do método. Só aparece em ecrãs pequenos. */
+.method-mobile-info {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    /* No telemóvel, as etapas passam a deslizar horizontalmente. */
+    .method-grid {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .method-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .method-card {
+        min-width: 86%;
+        padding: 20px;
+        border: 1px solid var(--grey);
+        border-radius: 12px;
+        background: rgba(237, 237, 237, 0.2);
+        scroll-snap-align: center;
+    }
+
+    .method-mobile-info {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(4, 15, 37, 0.45);
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+}
