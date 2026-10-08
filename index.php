@@ -1,38 +1,80 @@
 <?php
+// Esta página está na raiz do projeto.
 $basePath = '';
+
+// Indica à navbar que a página ativa é a Accueil.
+$currentPage = 'accueil';
+
+// Título usado no separador do navegador.
+$pageTitle = "S’B 22 Agency — Portfolio · Maquette";
+
+// Adiciona o início do HTML e a navbar.
 include 'includes/header.php';
 include 'includes/navbar.php';
 ?>
 
-<main>
-    <section class="hero">
-        <div class="hero-text">
-            <p class="eyebrow">S'B22 Agency</p>
-            <h1>Communication, influence et image de marque.</h1>
-            <p class="hero-description">
-                Nous accompagnons les entreprises et les projets dans leur communication,
-                de la stratégie à la création de contenu.
-            </p>
+<!-- Marca o topo da página para o botão "Haut de page" -->
+<div id="top"></div>
 
-            <div class="hero-buttons">
-                <a class="button primary-button" href="pages/projets/projets.php">Découvrir nos projets</a>
-                <a class="button secondary-button" href="pages/contact/contact.php">Parlons de votre projet</a>
+<main class="home-main">
+
+    <!-- HERO: primeira secção visível da Accueil -->
+    <section class="hero">
+
+        <!-- Pequena linha de informação no topo do Hero -->
+        <div class="hero-meta">
+            <span class="hero-badge">S’B 22 · MAQUETTE</span>
+            <span class="hero-sector">Relations publiques & communication</span>
+        </div>
+
+        <div class="hero-grid">
+
+            <!-- Parte esquerda: texto principal -->
+            <div class="hero-copy">
+                <span class="hero-kicker">S’B 22 Agency — Portfolio</span>
+
+                <h1>
+                    Chaque projet raconte
+                    <span>une histoire.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Une sélection de projets qui illustrent notre approche : construire une communication cohérente,
+                    créer des contenus qui valorisent votre image et développer la visibilité de votre activité.
+                </p>
+
+                <!-- Botões principais -->
+                <div class="hero-actions">
+                    <a class="button button-primary" href="pages/projets/projets.php">
+                        Découvrir les projets <span aria-hidden="true">↓</span>
+                    </a>
+
+                    <a class="button button-secondary" href="pages/contact/contact.php">
+                        Parler de mon projet <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Parte direita: projeto Kuba Home -->
+            <div class="hero-project">
+                <img src="assets/images/projects/kuba/kuba-3.jpg" alt="Réalisation cliente Kuba Home présentée dans le portfolio S’B 22">
+
+                <!-- Informação colocada por cima da imagem -->
+                <div class="hero-project-overlay">
+                    <div>
+                        <span class="project-small">Projet réel · Kuba Home</span>
+                        <span class="project-title">Présence vitrine premium</span>
+                    </div>
+
+                    <span class="project-small project-client">Client S’B 22</span>
+                </div>
             </div>
         </div>
-
-        <div class="hero-image">
-            <img src="assets/images/general/hero_editorial_collab_1790951639870.jpg" alt="Collaboration S'B22 Agency">
-        </div>
     </section>
 
-    <section class="home-intro">
-        <p class="eyebrow">L'agence</p>
-        <h2>Une communication pensée pour créer du lien.</h2>
-        <p>
-            S'B22 Agency accompagne ses clients dans leurs besoins de communication,
-            de visibilité et de création de contenu.
-        </p>
-    </section>
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php
+// Adiciona o footer no fim da página.
+include 'includes/footer.php';
+?>
