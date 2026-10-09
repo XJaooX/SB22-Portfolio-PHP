@@ -63,3 +63,25 @@ if (methodGrid && methodCounter) {
         });
     });
 }
+
+
+// expertises
+var expertiseButtons = document.querySelectorAll('.expertise-button');
+var expertiseItems = document.querySelectorAll('.expertise-item');
+
+expertiseButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        var item = button.closest('.expertise-item');
+        var wasOpen = item.classList.contains('open');
+
+        expertiseItems.forEach(function (otherItem) {
+            otherItem.classList.remove('open');
+            otherItem.querySelector('.expertise-symbol').textContent = '+';
+        });
+
+        if (!wasOpen) {
+            item.classList.add('open');
+            item.querySelector('.expertise-symbol').textContent = '−';
+        }
+    });
+});
