@@ -31,6 +31,7 @@ if (siteHeader) {
 // Atualiza o contador enquanto se desliza entre as etapas.
 const methodGrid = document.getElementById('method-grid');
 const methodCounter = document.getElementById('method-counter');
+const methodDots = document.querySelectorAll('.method-dot');
 
 if (methodGrid && methodCounter) {
     methodGrid.addEventListener('scroll', function () {
@@ -50,6 +51,15 @@ if (methodGrid && methodCounter) {
             }
         });
 
-        methodCounter.textContent = String(activeIndex + 1).padStart(2, '0') + ' / ' + String(cards.length).padStart(2, '0');
+        // Atualiza o contador e o ponto ativo.
+        methodCounter.textContent = (activeIndex + 1) + '/' + cards.length;
+
+        methodDots.forEach(function (dot, index) {
+            if (index === activeIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
     });
 }

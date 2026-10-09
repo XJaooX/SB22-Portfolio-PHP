@@ -998,3 +998,39 @@ img {
         text-transform: uppercase;
     }
 }
+
+
+/* Fundo da primeira metade da página L'agence, igual ao portfolio original */
+.agency-panel {
+    background: rgba(237, 237, 237, 0.3);
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+/* Pontos que mostram a posição no carrossel mobile */
+.method-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.method-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(4, 15, 37, 0.25);
+    transition: 0.2s ease;
+}
+
+.method-dot.active {
+    width: 20px;
+    background: var(--navy);
+}
+
+@media (max-width: 900px) {
+    .method-mobile-info {
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+}

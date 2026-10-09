@@ -2,6 +2,12 @@
 // Esta página está dentro de pages/agence, por isso voltamos duas pastas para chegar à raiz.
 $basePath = '../../';
 
+// Indica à navbar qual é a página atual.
+$currentPage = 'agence';
+
+// Título mostrado no separador do navegador.
+$pageTitle = "L’agence — S’B 22 Agency";
+
 // Valores da agência.
 // Guardamos os textos num array para depois os mostrar com um foreach.
 $values = [
@@ -64,6 +70,9 @@ include '../../includes/navbar.php';
 <!-- Conteúdo principal da página L'agence -->
 <main>
 
+    <!-- Primeira metade da página, com apresentação e valores -->
+    <div class="agency-panel">
+
     <!-- Apresentação da agência -->
     <section class="agency-intro">
         <div class="agency-intro-title">
@@ -100,6 +109,8 @@ include '../../includes/navbar.php';
 
     </section>
 
+    </div>
+
     <!-- Secção que explica o método de trabalho -->
     <section class="agency-method">
 
@@ -134,8 +145,13 @@ include '../../includes/navbar.php';
 
         <!-- Indicador que aparece apenas no telemóvel -->
         <div class="method-mobile-info">
-            <span>Glisser pour explorer</span>
-            <span id="method-counter">01 / 05</span>
+            <div class="method-dots">
+                <?php foreach ($method as $index => $step) { ?>
+                    <span class="method-dot <?php echo $index === 0 ? 'active' : ''; ?>"></span>
+                <?php } ?>
+            </div>
+
+            <span id="method-counter">1/5</span>
         </div>
 
     </section>
