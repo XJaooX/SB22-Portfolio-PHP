@@ -85,3 +85,24 @@ expertiseButtons.forEach(function (button) {
         }
     });
 });
+
+
+// formulario contact
+var contactForm = document.getElementById('contact-form');
+var formSuccess = document.getElementById('form-success');
+var showFormAgain = document.getElementById('show-form-again');
+
+if (contactForm && formSuccess) {
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('show');
+    });
+}
+
+if (showFormAgain && contactForm && formSuccess) {
+    showFormAgain.addEventListener('click', function () {
+        formSuccess.classList.remove('show');
+        contactForm.style.display = 'block';
+    });
+}
