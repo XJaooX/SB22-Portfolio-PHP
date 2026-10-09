@@ -106,3 +106,118 @@ if (showFormAgain && contactForm && formSuccess) {
         contactForm.style.display = 'block';
     });
 }
+
+
+// filtros dos projetos
+var projectFilters = document.querySelectorAll('.project-filter');
+var projectCards = document.querySelectorAll('.project-card');
+var projectsEmpty = document.getElementById('projects-empty');
+var projectsCount = document.getElementById('projects-count');
+
+projectFilters.forEach(function (button) {
+    button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+        var count = 0;
+
+        projectFilters.forEach(function (item) {
+            item.classList.remove('active');
+        });
+
+        button.classList.add('active');
+
+        projectCards.forEach(function (card) {
+            var category = card.getAttribute('data-category');
+
+            if (filter == 'Tous' || category == filter) {
+                card.style.display = '';
+                count++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (projectsEmpty) {
+            projectsEmpty.hidden = count != 0;
+        }
+
+        if (projectsCount) {
+            projectsCount.textContent = count + (count == 1 ? ' projet' : ' projets');
+        }
+    });
+});
+
+
+// modais
+function openProject(id) {
+    var modal = document.getElementById('project-' + id);
+    var opened = document.querySelector('.project-modal.open');
+
+    if (opened) {
+        opened.classList.remove('open');
+        opened.setAttribute('aria-hidden', 'true');
+    }
+
+    if (modal) {
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+}
+
+function closeProject(modal) {
+    if (!modal) {
+        return;
+    }
+
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+
+    modal.querySelectorAll('video').forEach(function (video) {
+        video.pause();
+    });
+}
+
+projectCards.forEach(function (card) {
+    card.addEventListener('click', function () {
+        openProject(card.getAttribute('data-project'));
+    });
+});
+
+document.querySelectorAll('[data-close-modal]').forEach(function (button) {
+    button.addEventListener('click', function () {
+        closeProject(button.closest('.project-modal'));
+    });
+});
+
+document.querySelectorAll('[data-open-project]').forEach(function (button) {
+    button.addEventListener('click', function () {
+        openProject(button.getAttribute('data-open-project'));
+    });
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key == 'Escape') {
+        closeProject(document.querySelector('.project-modal.open'));
+    }
+});
+
+
+// carrosseis
+document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+    var track = carousel.querySelector('.simple-carousel-track');
+    var left = carousel.querySelector('[data-carousel-prev]');
+    var right = carousel.querySelector('[data-carousel-next]');
+
+    if (track && left) {
+        left.addEventListener('click', function () {
+            track.scrollLeft = track.scrollLeft - track.clientWidth;
+        });
+    }
+
+    if (track && right) {
+        right.addEventListener('click', function () {
+            track.scrollLeft = track.scrollLeft + track.clientWidth;
+        });
+    }
+});
