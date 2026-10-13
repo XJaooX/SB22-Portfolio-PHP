@@ -10,59 +10,15 @@ $pageTitle = "L’agence — S’B 22 Agency";
 
 // Valores da agência.
 // Guardamos os textos num array para depois os mostrar com um foreach.
-$values = [
-    [
-        'number' => '01',
-        'title' => 'Écoute',
-        'description' => 'Comprendre vos enjeux avant toute recommandation.'
-    ],
-    [
-        'number' => '02',
-        'title' => 'Créativité',
-        'description' => 'Imaginer une communication qui vous ressemble.'
-    ],
-    [
-        'number' => '03',
-        'title' => 'Proximité',
-        'description' => 'Un échange direct et continu à chaque étape.'
-    ],
-    [
-        'number' => '04',
-        'title' => 'Authenticité',
-        'description' => 'Des messages justes et fidèles à votre identité.'
-    ]
-];
+
 
 // Etapas da forma de trabalhar da agência.
-$method = [
-    [
-        'number' => '01',
-        'title' => 'Écouter',
-        'description' => 'Comprendre votre demande, vos objectifs et les besoins de votre activité.'
-    ],
-    [
-        'number' => '02',
-        'title' => 'Analyser',
-        'description' => 'Étudier votre image, votre public et les actions déjà en place pour identifier les priorités.'
-    ],
-    [
-        'number' => '03',
-        'title' => 'Construire',
-        'description' => 'Définir une stratégie et choisir les messages, supports et contenus adaptés.'
-    ],
-    [
-        'number' => '04',
-        'title' => 'Déployer',
-        'description' => 'Mettre en œuvre les actions et diffuser les contenus sur les supports retenus.'
-    ],
-    [
-        'number' => '05',
-        'title' => 'Suivre',
-        'description' => 'Analyser les actions menées et ajuster la stratégie lorsque nécessaire.'
-    ]
-];
+
 
 // Adiciona o header e a navbar que são usados em todas as páginas.
+require_once __DIR__ . '/../../functions/agency.php';
+$values = getAgencyValues();
+$method = getAgencyMethod();
 include '../../includes/header.php';
 include '../../includes/navbar.php';
 ?>
