@@ -16,10 +16,10 @@ if (!isset($currentPage)) {
     <div class="nav-container">
 
         <!-- Logo da agência. Ao clicar volta para a Accueil -->
-        <a class="brand" href="<?php echo $basePath; ?>index.php" aria-label="S’B 22 Agency - Accueil">
-            <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-navy.png" alt="S’B 22 Agency">
+        <a class="brand" href="<?php echo $basePath; ?>index.php" aria-label="SB22 Agency - Accueil">
+            <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-navy.png" alt="SB22 Agency">
             <div class="brand-text">
-                <span class="brand-name">S’B 22</span>
+                <span class="brand-name">SB22</span>
                 <span class="brand-subtitle">Agency</span>
             </div>
         </a>
