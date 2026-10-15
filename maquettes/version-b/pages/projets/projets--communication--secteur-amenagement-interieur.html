@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- UTF-8 supports accented characters; viewport adapts the page to mobile screen widths. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- $pageTitle appears in the browser tab; the meta description helps describe the website to search engines. -->
+    <title>Réalisations — SB22 Agency</title>
+    <meta name="description" content="Portfolio SB22 Agency. Découvrez les publications, vidéos, créations graphiques et signalétique réalisées pour nos clients.">
+
+    <!-- Google Fonts provides Cormorant Garamond for headings and Plus Jakarta Sans for body text. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- The CSS file controls colors, sizes, spacing, grids, and responsive layout. -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/portfolio-layout.css">
+    <link rel="stylesheet" href="../../assets/css/design-unified.css">
+    <link rel="stylesheet" href="../../assets/css/brand-official.css">
+    <link rel="stylesheet" href="../../assets/css/maquette-watermark.css">
+    <link rel="stylesheet" href="../../assets/css/feedback-sebaa.css">
+</head>
+<body class="portfolio-gallery-page">
+
+<!-- Fixed MAQUETTE announcement banner, with separate text for desktop and mobile. -->
+
+
+<!-- Fixed navigation: logo, page links, contact button, and mobile menu control. -->
+<header class="site-header" id="site-header">
+    <div class="nav-container">
+
+        <!-- The logo links to index.php; $basePath ensures the correct URL and image path. -->
+        <a class="brand" href="../../index.html" aria-label="SB22 Agency - Accueil">
+            <img src="../../assets/images/branding/sb22-logo-white-transparent.png" alt="SB22 Agency">
+            <div class="brand-text">
+                <span class="brand-name">SB22</span>
+                <span class="brand-subtitle">Agency</span>
+            </div>
+        </a>
+
+        <!-- DESKTOP LINKS: each condition adds the active class to the current page. -->
+        <nav class="main-nav">
+            <a class="" href="../../index.html">Accueil</a>
+            <a class="active" href="../../pages/projets/projets.html">Projets</a>
+            <a class="" href="../../pages/agence/agence.html">À propos</a>
+            <a class="" href="../../pages/contact/contact.html">Contact</a>
+        </nav>
+
+        <!-- Highlighted contact link, with a different class on the Contact page. -->
+        <span class="sb22-maquette-mark" role="note">MAQUETTE</span>
+        <a class="nav-contact " href="../../pages/contact/contact.html">
+            <span>Nous contacter</span>
+            <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+
+        <!-- main.js finds this button by its mobile-menu-button ID and toggles its open class. -->
+        <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE LINKS: shown when main.js adds the open class to the mobile-menu element. -->
+<div class="mobile-menu" id="mobile-menu">
+    <nav>
+        <a class="" href="../../index.html">Accueil</a>
+        <a class="active" href="../../pages/projets/projets.html">Projets</a>
+        <a class="" href="../../pages/agence/agence.html">À propos</a>
+        <a class="" href="../../pages/contact/contact.html">Contact</a>
+    </nav>
+
+    <a class="mobile-contact" href="../../pages/contact/contact.html">Nous contacter</a>
+</div>
+<div id="top"></div>
+<main class="projects-page kg-page">
+    <div class="kg-shell">
+        <aside class="kg-filters" aria-label="Filtres des réalisations">
+            <div class="kg-filter-inner">
+                <p class="kg-sidebar-overline">SB22 Agency · Portfolio</p>
+                <h1>Nos<br>projets<span>.</span></h1>
+                <div class="kg-filter-group">
+                    <h2>Type de projet</h2>
+                                        <a href="projets--secteur-amenagement-interieur.html" class="kg-filter-pill " >Tous</a>
+                                        <a href="projets--social-media--secteur-amenagement-interieur.html" class="kg-filter-pill " >Social Media</a>
+                                        <a href="projets--communication--secteur-amenagement-interieur.html" class="kg-filter-pill active" aria-current="page">Communication</a>
+                                        <a href="projets--digital--secteur-amenagement-interieur.html" class="kg-filter-pill " >Digital</a>
+                                    </div>
+                <div class="kg-filter-group">
+                    <h2>Secteur d’activité</h2>
+                    <a href="projets--communication.html" class="kg-filter-pill " >Tous</a>
+                                        <a href="projets--communication--secteur-amenagement-interieur.html" class="kg-filter-pill active" aria-current="page">Aménagement intérieur</a>
+                                        <a href="projets--communication--secteur-edition.html" class="kg-filter-pill " >Édition</a>
+                                        <a href="projets--communication--secteur-activites-pour-enfants.html" class="kg-filter-pill " >Activités pour enfants</a>
+                                        <a href="projets--communication--secteur-petite-enfance.html" class="kg-filter-pill " >Petite enfance</a>
+                                    </div>
+                <a class="kg-sidebar-contact" href="../contact/contact.html">Parlons de votre projet</a>
+            </div>
+        </aside>
+        <section class="kg-work" aria-label="Galerie des projets">
+            <div class="kg-work-heading">
+                <div><span class="kg-eyebrow">Projets réalisés par SB22 Agency</span><p>Publications, créations graphiques, signalétique et vidéos : découvrez notre travail.</p></div>
+                
+            </div>
+            <div class="kg-card-deck" id="projects-grid" tabindex="0">
+                                <p class="kg-empty">Aucun projet ne correspond à ces filtres. <a href="projets.html">Afficher tous les projets <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>            </div>
+                        <div class="kg-gallery-foot"><span>Créations graphiques · Réseaux sociaux · Vidéo · Signalétique</span><a href="../../index.html">Retour à l’accueil</a></div>
+        </section>
+    </div>
+    </main>
+<!-- FOOTER GUIDE: this block is included at the bottom of every page. Edit contact details, social links, and footer navigation here. The $basePath variable keeps the links valid from both the root and pages/ directory. The main JavaScript file is loaded here after the HTML content. -->
+<!-- This footer is shared by every page. -->
+<footer class="site-footer">
+    <div class="footer-inner">
+
+        <!-- Main footer section. -->
+        <div class="footer-grid">
+
+            <!-- Agency identity: logo, introduction, email, and phone number. -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../../assets/images/branding/sb22-logo-white.png" alt="SB22 Agency">
+                    <div class="footer-brand-text">
+                        <span class="footer-brand-name">SB22</span>
+                        <span class="footer-brand-subtitle">Agency</span>
+                    </div>
+                </div>
+
+                <p class="footer-description">
+                    Agence de relations publiques et de communication, avec une approche humaine et stratégique.
+                </p>
+
+                <div class="footer-contact">
+                    <a href="mailto:contact@sb22agency.com">contact@sb22agency.com</a>
+                    <a href="tel:0673031202">06 73 03 12 02</a>
+                </div>
+            </div>
+
+            <!-- Repeat the main navigation links so visitors can navigate from the bottom of a page. -->
+            <div class="footer-column">
+                <span class="footer-title">Navigation</span>
+                <a href="../../index.html">Accueil</a>
+                <a href="../../pages/agence/agence.html">À propos</a>
+                <a href="../../pages/projets/projets.html">Projets sélectionnés</a>
+                <a href="../../pages/contact/contact.html">Contact</a>
+            </div>
+
+            <!-- External links: target=_blank opens a new tab and rel=noreferrer hides the referring page. -->
+            <div class="footer-column footer-links">
+                <span class="footer-title">Réseaux & Liens</span>
+
+                <a href="https://www.instagram.com/sb22agency/" target="_blank" rel="noopener noreferrer">
+                    Instagram @sb22agency <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a href="https://www.facebook.com/people/SB-22/61580109419316/" target="_blank" rel="noopener noreferrer">
+                    Facebook SB22 Agency <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a class="official-site" href="https://www.sb22agency.com" target="_blank" rel="noreferrer">
+                    Site officiel sb22agency.com <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a class="back-to-top" href="#top">Haut de page <span>↑</span></a>
+            </div>
+        </div>
+
+        <!-- date("Y") displays the current year automatically; the legal links using # are placeholders. -->
+        <div class="footer-bottom">
+            <p>© 2026 SB22 Agency. Portfolio.</p>
+
+            
+        </div>
+    </div>
+</footer>
+
+<!-- main.js manages the mobile menu, project filters, modals, carousels, contact form, and accordions. -->
+<script src="../../assets/js/main.js"></script>
+
+<!-- Closes the body and html elements opened by includes/header.php. -->
+</body>
+</html>

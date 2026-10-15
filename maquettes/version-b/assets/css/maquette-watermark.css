@@ -1,0 +1,33 @@
+.nav-container {
+    position: relative;
+}
+.sb22-maquette-mark {
+    position: absolute;
+    top: 50%;
+    right: 207px;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    border: 1px solid rgba(4, 15, 37, 0.13);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.93);
+    color: rgba(4, 15, 37, 0.72);
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+@media (max-width: 767px) {
+    .sb22-maquette-mark {
+        right: 68px;
+        padding: 6px 9px;
+        font-size: 8px;
+    }
+}
