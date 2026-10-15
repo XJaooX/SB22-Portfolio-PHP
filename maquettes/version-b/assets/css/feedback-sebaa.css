@@ -852,3 +852,16 @@ body {
         transition: none !important;
     }
 }
+
+.portfolio-immersive .sb22-home .pr-stage[data-active="kuba-home"] .pr-stage-image,
+.portfolio-immersive .sb22-home .pr-stage[data-active="kuba-home"] .pr-stage-image > img,
+.portfolio-gallery-page .kg-project-card[data-project="kuba-home"] > .kg-card-visuals,
+.portfolio-gallery-page .kg-project-card[data-project="kuba-home"] > .kg-card-visuals img,
+.portfolio-gallery-page #project-kuba-home .book-case-cover,
+.portfolio-gallery-page #project-kuba-home .book-case-cover img {
+    background: #080808 !important;
+}
+
+.portfolio-gallery-page .kg-project-card[data-project="kuba-home"] > .kg-card-visuals img {
+    object-fit: contain !important;
+}
