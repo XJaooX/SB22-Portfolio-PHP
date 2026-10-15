@@ -21,3 +21,15 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Responsive layout checks
         run: node scripts/mobile-check.mjs
+      - name: Export Netlify preview
+        run: |
+          node scripts/export-static.mjs
+          cd dist
+          zip -qr ../sb22-portfolio-feedback.zip .
+          cd ..
+      - name: Upload Netlify preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: SB22-Portfolio-Netlify-Preview
+          path: sb22-portfolio-feedback.zip
+          retention-days: 30
