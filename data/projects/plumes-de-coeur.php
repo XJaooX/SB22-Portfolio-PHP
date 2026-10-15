@@ -26,5 +26,5 @@ return [
             ['title' => 'Vitrine & devanture', 'text' => 'Conception de l’habillage graphique de la devanture pour rendre le lieu identifiable.'],
             ['title' => 'Signalétique directionnelle', 'text' => 'Déclinaison de l’identité sur un panneau extérieur pour guider les visiteurs.']
         ],
-        'result' => 'S’B 22 a pris en charge la recherche, la direction artistique, les échanges avec la cliente et la conception graphique de l’univers, de la vitrine et de la signalétique.'
+        'result' => 'SB22 a pris en charge la recherche, la direction artistique, les échanges avec la cliente et la conception graphique de l’univers, de la vitrine et de la signalétique.'
     ];

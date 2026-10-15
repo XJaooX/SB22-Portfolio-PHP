@@ -6,7 +6,7 @@ $basePath = '../../';
 $currentPage = 'agence';
 
 // Título mostrado no separador do navegador.
-$pageTitle = "L’agence — S’B 22 Agency";
+$pageTitle = "L’agence — SB22 Agency";
 
 // Valores da agência.
 // Guardamos os textos num array para depois os mostrar com um foreach.
@@ -32,7 +32,7 @@ include '../../includes/navbar.php';
     <!-- Apresentação da agência -->
     <section class="agency-intro">
         <div class="agency-intro-title">
-            <p class="eyebrow">S'B22 Agency</p>
+            <p class="eyebrow">SB22 Agency</p>
 
             <h1>
                 L'humain au cœur

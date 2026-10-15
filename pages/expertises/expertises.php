@@ -2,7 +2,7 @@
 // pagina expertises
 $basePath = '../../';
 $currentPage = 'expertises';
-$pageTitle = "Expertises — S’B 22 Agency";
+$pageTitle = "Expertises — SB22 Agency";
 
 // lista das expertises
 
@@ -19,7 +19,7 @@ include '../../includes/navbar.php';
         <div class="expertises-heading">
             <div>
                 <p class="eyebrow">Champs d'intervention</p>
-                <h1>Expertises S’B 22</h1>
+                <h1>Expertises SB22</h1>
             </div>
 
             <p>Des compétences complémentaires pour concevoir et déployer votre communication.</p>
