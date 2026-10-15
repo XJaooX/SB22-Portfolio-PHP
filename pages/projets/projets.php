@@ -47,7 +47,6 @@ include '../../includes/navbar.php';
         <div class="projects-empty" id="projects-empty" hidden>Aucun projet dans cette catégorie pour le moment.</div>
     </section>
 
-    <?php include __DIR__ . '/../../includes/project-modal.php'; ?>
 </main>
 
 <?php include '../../includes/footer.php'; ?>

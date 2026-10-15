@@ -10,7 +10,7 @@
                 <div class="footer-logo">
                     <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="SB22 Agency">
                     <div class="footer-brand-text">
-                        <span class="footer-brand-name">S’B 22</span>
+                        <span class="footer-brand-name">SB22</span>
                         <span class="footer-brand-subtitle">Agency</span>
                     </div>
                 </div>
@@ -40,18 +40,18 @@
                 <span class="footer-title">Réseaux & Liens</span>
 
                 <a href="https://www.instagram.com/sb22agency/" target="_blank" rel="noreferrer">
-                    Instagram @sb22agency <span>↗</span>
+                    Instagram @sb22agency <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
                 </a>
 
                 <a href="https://www.facebook.com/people/SB-22/61580109419316/" target="_blank" rel="noreferrer">
-                    Facebook S’B 22 <span>↗</span>
+                    Facebook SB22 <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
                 </a>
 
                 <a class="official-site" href="https://www.sb22agency.com" target="_blank" rel="noreferrer">
-                    Site officiel sb22agency.com <span>↗</span>
+                    Site officiel sb22agency.com <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
                 </a>
 
-                <a class="back-to-top" href="#top">Haut de page <span>↑</span></a>
+                <a class="back-to-top" href="#top">Haut de page <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
             </div>
         </div>
 

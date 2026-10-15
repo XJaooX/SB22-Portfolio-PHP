@@ -18,13 +18,10 @@ if ($project['id'] === 'kuba-home') {
 }
 $isShowcase = count($previewImages) > 0;
 ?>
-<article
+<a href="detail.php?project=<?php echo rawurlencode($project['id']); ?>"
     class="project-card"
     data-category="<?php echo htmlspecialchars($project['filter'], ENT_QUOTES, 'UTF-8'); ?>"
     data-project="<?php echo htmlspecialchars($project['id'], ENT_QUOTES, 'UTF-8'); ?>"
-    role="button"
-    aria-label="Découvrir le projet <?php echo htmlspecialchars($project['name'], ENT_QUOTES, 'UTF-8'); ?>"
-    tabindex="0"
 >
     <div class="project-cover <?php echo $isShowcase ? 'project-cover-showcase' : 'project-cover-single'; ?>">
         <?php if ($isShowcase) { ?>
@@ -57,7 +54,7 @@ $isShowcase = count($previewImages) > 0;
         <p><?php echo htmlspecialchars($project['description'], ENT_QUOTES, 'UTF-8'); ?></p>
         <div class="project-bottom">
             <span><?php echo htmlspecialchars($project['number'], ENT_QUOTES, 'UTF-8'); ?></span>
-            <span class="project-link">Découvrir le projet <span aria-hidden="true">↗</span></span>
+            <span class="project-link">Découvrir le projet <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
     </div>
-</article>
+</a>

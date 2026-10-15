@@ -179,9 +179,11 @@ function closeProject(modal) {
 }
 
 projectCards.forEach(function (card) {
-    card.addEventListener('click', function () {
-        openProject(card.getAttribute('data-project'));
-    });
+    if (card.tagName.toLowerCase() !== 'a') {
+        card.addEventListener('click', function () {
+            openProject(card.getAttribute('data-project'));
+        });
+    }
 });
 
 document.querySelectorAll('[data-close-modal]').forEach(function (button) {

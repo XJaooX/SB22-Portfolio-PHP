@@ -28,3 +28,17 @@ Principes retenus : réalisations visibles dès l'accueil, projets présentés p
 ## Limites
 
 La branche PHP disponible ne contient pas une copie identifiée comme étant exactement la maquette B hébergée sur Netlify. Le travail doit donc être comparé à cette maquette avant d'y remplacer des fichiers. Le formulaire de contact historique ne réalise pas d'envoi côté serveur.
+
+
+## Deuxième phase — étude de cas et retours détaillés
+
+- Analyse de Aymen Studio : https://aymenstudio.com/work/
+- Accueil : identification immédiate du portfolio SB22 Agency, réalisation visible et texte concis.
+- Réalisations : suppression des présentations centrées sur les logos, prévisualisations en duo, liens vers de vraies pages projets.
+- Navigation : cartes de projets transformées en liens accessibles, page détail individuelle avec URL permanente.
+- Études de cas : contexte, mission confiée, démarche, prestations et galerie réelle avant les textes de détail.
+- Formats respectés : visuels non rognés, affiches, publications et vidéos intégrées, mise en page mono-colonne sur mobile.
+- Boutons : remplacement des flèches décoratives principales par un pictogramme SVG discret.
+- Le site de production Netlify n'a pas été remplacé. Les pages PHP sont à héberger sur un serveur PHP ou à exporter statiquement.
+
+Pages de détail : pages/projets/detail.php?project=kuba-home et pages/projets/detail.php?project=plumes-de-coeur

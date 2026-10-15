@@ -36,7 +36,7 @@ if (!isset($currentPage)) {
         <!-- Botão de contacto -->
         <a class="nav-contact <?php echo $currentPage === 'contact' ? 'contact-active' : ''; ?>" href="<?php echo $basePath; ?>pages/contact/contact.php">
             <span>Parlons de votre projet</span>
-            <span aria-hidden="true">↗</span>
+            <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
         </a>
 
         <!-- Botão que abre o menu em telemóvel -->
