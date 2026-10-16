@@ -116,7 +116,7 @@ def make_modal(item,index):
         if not (ROOT/"assets/images/projects"/item["video_poster"]).is_file():raise FileNotFoundError(item["video_poster"])
         video=f'''<section class="sb22-video-feature" aria-label="Vidéo publicitaire">
         <div class="sb22-video-copy">
-            <span>EN VIDÉO</span><h3>{esc(item["video_title"])}</h3>
+            <span>Les réalisations · en vidéo</span><h3>{esc(item["video_title"])}</h3>
             <p>{esc(item["realisations"])}</p>
         </div>
         <div class="sb22-video-container">
@@ -160,7 +160,7 @@ def main_markup():
     filter_html="\n".join(f'<button class="kg-filter-pill sb22-domain-filter{" active" if key=="tous" else ""}" type="button" data-domain-filter="{key}" aria-pressed="{"true" if key=="tous" else "false"}"><span>{esc(label)}</span><small>{number}</small></button>' for key,label,number in buttons)
     cards="\n".join(make_card(item,i+1) for i,item in enumerate(CASES))
     modals="\n".join(make_modal(item,i) for i,item in enumerate(CASES))
-    return f'''<main class="projects-page kg-page sb22-domain-page" id="top">
+    return f'''<main class="projects-page kg-page sb22-domain-page">
     <div class="kg-shell">
         <aside class="kg-filters" aria-label="Navigation par domaine d’expertise">
             <div class="kg-filter-inner">
@@ -197,5 +197,8 @@ def main_markup():
 before=original.split("<main",1)[0]
 after=original.split("</main>",1)[1]
 final=before+main_markup()+after
+domain_script='<script src="../../assets/js/feedback-domains.js" defer></script>'
+if domain_script not in final:
+    final=final.replace("</body>", "    "+domain_script+"\n</body>",1)
 PAGE.write_text(final,encoding="utf-8")
 print("5 cartes, 5 fiches et trois domaines insérés dans:",PAGE)
