@@ -95,9 +95,9 @@
             <div class="contact-bottom-text"><strong>SB22 Agency</strong><p>France · Luxembourg · Belgique</p></div>
         </div>
         <div class="contact-form-box">
-                            <div class="form-note" role="status"><span>i</span><p>L’envoi via le formulaire sera activé après configuration du serveur. En attendant, écrivez-nous directement à contact@sb22agency.com.</p></div>
-                                                <form id="contact-form" method="get" action="contact.html" onsubmit="return false" data-demo="false">
-                <input type="hidden" name="csrf_token" value="b885cb1d7f04b0daedd6bdac80356f68ac541aa211674a9ea9f8f08067a64985">
+                            <div class="form-note" role="note"><span>i</span><p>Le formulaire utilise Netlify Forms. L’envoi sera disponible après publication sur Netlify et activation de la détection des formulaires. Vous pouvez aussi écrire à contact@sb22agency.com.</p></div>
+                                                <form id="contact-form" name="contact-sb22" method="POST" action="merci.html" data-netlify="true" netlify-honeypot="website">
+                <input type="hidden" name="form-name" value="contact-sb22">
                 <div style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">Site web</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
                 <div class="form-row">
                     <div><label for="prenom">Prénom *</label><input id="prenom" name="prenom" value="" type="text" maxlength="100" required></div>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="form-message"><label for="message">Message *</label><textarea id="message" name="message" maxlength="5000" rows="5" required></textarea></div>
-                <button class="form-submit" type="button" disabled aria-disabled="true">Envoi indisponible dans cet aperçu <span>→</span></button>
+                <button class="form-submit" type="submit">Envoyer mon message <span aria-hidden="true">→</span></button>
             </form>
                     </div>
     </section>
