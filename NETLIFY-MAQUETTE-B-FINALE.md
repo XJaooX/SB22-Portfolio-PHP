@@ -29,3 +29,18 @@ Version HTML de présentation issue de la maquette B, sur la branche `stage/maqu
 - Configuration HTML du formulaire
 
 Le test d'envoi du formulaire en production reste à effectuer après le déploiement Netlify.
+
+## Animations « WOW » (16/10)
+
+Fichiers ajoutés : `maquettes/version-b/assets/css/feedback-wow.css` et `maquettes/version-b/assets/js/feedback-wow.js`.
+
+- Accueil : animation progressive du titre, de la description, des quatre cartes et de la zone projet.
+- Accueil : révélation de la couverture par un rideau bleu marine avec léger zoom.
+- Changement de projet : nouvelle transition de la couverture et des informations en sélectionnant un autre projet.
+- Projets : cartes plus expressives au survol, avec une légère élévation.
+- Fiches projets : ouverture animée et dévoilement de l'image principale.
+- Barre discrète indiquant la progression dans la page.
+- Les effets se désactivent si l'utilisateur préfère un mouvement réduit.
+
+Vérification automatique : animations actives et aucun débordement horizontal observé à 390 et 1440 px avec Chromium en mode mouvement autorisé.
+Le site Netlify déjà en ligne ne se met pas à jour tout seul : il faut déposer le nouveau ZIP pour voir ces animations en ligne.
