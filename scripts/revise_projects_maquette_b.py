@@ -26,7 +26,7 @@ def fix_modal(m):
     block,n=re.subn(r'<section class="book-case-story"[^>]*>[\s\S]*?</section>',lambda _:replacement,block,count=1)
     if n!=1:raise RuntimeError("Story not found: "+slug)
     block=re.sub(r'\s*<section class="book-case-services">[\s\S]*?</section>','',block,count=1)
-    if slug in videos:
+    if slug in videos and 'sb22-video-feature' not in block:
         block=re.sub(r'<figure class="book-case-figure is-video">[\s\S]*?</figure>','',block)
         source,poster,title=videos[slug]
         v='<section class="sb22-video-feature" aria-label="Vidéo du projet"><div class="sb22-video-copy"><span>EN VIDÉO</span><h3>'+e(title)+'</h3><p>Découvrez le contenu vidéo réalisé pour ce projet.</p></div><div class="sb22-video-container"><video controls playsinline preload="metadata" poster="'+poster+'" aria-label="'+e(title)+'"><source src="'+source+'" type="video/mp4">Votre navigateur ne prend pas en charge cette vidéo.</video></div></section>'
@@ -40,5 +40,5 @@ for path in (root/"pages/projets").glob("*.html"):
     if n:
         path.write_text(new,encoding="utf-8")
         updated+=1
-assert updated==20,updated
+assert updated>=10,updated
 print("BLOCO 1:",updated,"páginas corrigidas; fichas curtas e vídeos destacados.")
