@@ -1,36 +1,58 @@
-.sb22-domain-page .sb22-domain-card[data-project="respira-evenement"] .kg-card-visuals {
+.sb22-domain-page .sb22-domain-card[data-project="atelier-respira"] .kg-card-visuals {
     background: #f5f1e9;
 }
-.sb22-domain-page .sb22-domain-card[data-project="respira-evenement"] .kg-card-visuals img {
+.sb22-domain-page .sb22-domain-card[data-project="atelier-respira"] .kg-card-visuals img {
     object-fit: cover;
     object-position: center 35%;
 }
-.sb22-domain-page #project-respira-evenement .book-case-cover {
+.sb22-domain-page #project-atelier-respira .book-case-cover {
     background: #f3eee8;
 }
-.sb22-domain-page #project-respira-evenement .book-case-cover img {
+.sb22-domain-page #project-atelier-respira .book-case-cover img {
     width: 100%;
     object-fit: contain;
     max-height: 440px;
 }
-.sb22-domain-page #project-respira-evenement .sb22-responsive-media {
+.sb22-domain-page #project-atelier-respira .sb22-responsive-media {
     display: grid;
     gap: 36px;
 }
-.sb22-domain-page #project-respira-evenement .sb22-video-feature {
+.sb22-domain-page #project-atelier-respira .sb22-video-feature {
     margin: 0;
 }
-.sb22-domain-page #project-respira-evenement .sb22-video-container video {
+.sb22-domain-page #project-atelier-respira .sb22-video-container video {
     max-height: 580px;
     width: 100%;
     object-fit: contain;
     background: #0c1322;
 }
 @media (max-width: 700px) {
-    .sb22-domain-page #project-respira-evenement .sb22-responsive-media {
+    .sb22-domain-page #project-atelier-respira .sb22-responsive-media {
         gap: 22px;
     }
-    .sb22-domain-page #project-respira-evenement .sb22-video-container video {
+    .sb22-domain-page #project-atelier-respira .sb22-video-container video {
         max-height: 70vh;
     }
+}
+
+/* Une carte avec portrait pour l’interview capsule, même système que les autres projets. */
+.sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals {
+    background: #efece8;
+}
+.sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals img {
+    object-fit: cover;
+    object-position: center 27%;
+}
+.sb22-domain-page #project-interview-capsule .book-case-cover {
+    background: #f2efeb;
+}
+.sb22-domain-page #project-interview-capsule .book-case-cover img {
+    max-height: 480px;
+    object-fit: contain;
+}
+.sb22-domain-page #project-interview-capsule .sb22-video-container video {
+    max-height: 640px;
+    width: 100%;
+    object-fit: contain;
+    background: #0c1322;
 }

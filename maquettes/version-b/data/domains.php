@@ -3,12 +3,12 @@ return [
     'tous' => [
         'label' => 'Toutes les réalisations',
         'title' => 'Des projets concrets, des identités singulières.',
-        'description' => 'Publications, identité visuelle, campagnes Meta Ads et créations audiovisuelles : les réalisations SB22 Agency.'
+        'description' => 'Publications, identité visuelle, campagnes Meta Ads et interviews : les réalisations SB22 Agency.'
     ],
     'social-media' => [
         'label' => 'Social Media Management',
         'title' => 'Une communication pensée pour les réseaux.',
-        'description' => 'Créations Instagram et Facebook pour Kuba Home et Plumes de Cœur Éditions.'
+        'description' => 'Créations pour Kuba Home, Plumes de Cœur Éditions et contenus vidéo pour l’Atelier RESPIRA.'
     ],
     'design-graphique' => [
         'label' => 'Design graphique & signalétique',
@@ -21,8 +21,8 @@ return [
         'description' => 'Campagnes Meta Ads et vidéos publicitaires de Kid Fitness Lexy et Youplaboom.'
     ],
     'production-video' => [
-        'label' => 'Production vidéo & événementiel',
-        'title' => 'Des moments racontés en images.',
-        'description' => 'Interviews, immersions et formats courts autour de RESPIRA.'
+        'label' => 'Interviews & capsules vidéo',
+        'title' => 'Des histoires qui se racontent en images.',
+        'description' => 'Des interviews capsules qui font place aux expériences et aux émotions.'
     ]
 ];

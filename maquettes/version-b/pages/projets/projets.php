@@ -47,7 +47,7 @@ require __DIR__ . '/../../includes/navbar.php';
 
 <?php foreach ($cases as $case): include __DIR__ . '/../../includes/project-card.php'; endforeach; ?>
             </div>
-            <div class="kg-gallery-foot"><span>Communication · Création graphique · Publicité</span><a href="../../index.php">Retour à l’accueil</a></div>
+            <div class="kg-gallery-foot"><span>Communication · Création graphique · Publicité · Vidéo</span><a href="../../index.php">Retour à l’accueil</a></div>
         </section>
     </div>
 
