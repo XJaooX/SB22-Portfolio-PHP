@@ -40,7 +40,7 @@ return [
         'sector' => '07 / Interview & création vidéo',
         'name' => 'Interview Capsule',
         'description' => 'Un format d’interview intime qui laisse place aux confidences.',
-        'image' => 'assets/images/projects/interview-capsule/interview-portrait.jpg',
+        'image' => 'assets/images/projects/interview-capsule/interview-cover.png',
         'context' => 'Une capsule vidéo pensée pour donner la parole aux invités, loin du format journalistique classique.',
         'objective' => 'Créer un espace de parole sincère, où les invités peuvent partager leur vécu et leurs émotions.',
         'intervention' => 'Présentation d’une interview capsule qui privilégie le récit personnel, sans montrer les questions posées.',
@@ -50,7 +50,7 @@ return [
                 'src' => 'assets/videos/interview-capsule/interview-capsule.mp4',
                 'title' => 'L’interview capsule',
                 'caption' => 'Une parole libre et personnelle, au cœur du format.',
-                'poster' => 'assets/images/projects/interview-capsule/interview-portrait.jpg'
+                'poster' => 'assets/images/projects/interview-capsule/interview-cover.png'
             ]
         ]
     ]

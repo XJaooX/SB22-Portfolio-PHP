@@ -37,14 +37,15 @@
 
 /* Une carte avec portrait pour l’interview capsule, même système que les autres projets. */
 .sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals {
-    background: #efece8;
+    background: #e5d5c2;
 }
 .sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals img {
-    object-fit: cover;
-    object-position: center 27%;
+    object-fit: contain;
+    object-position: center;
+    background: #e5d5c2;
 }
 .sb22-domain-page #project-interview-capsule .book-case-cover {
-    background: #f2efeb;
+    background: #e5d5c2;
 }
 .sb22-domain-page #project-interview-capsule .book-case-cover img {
     max-height: 480px;
