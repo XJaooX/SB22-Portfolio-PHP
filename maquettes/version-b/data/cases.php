@@ -12,7 +12,7 @@ return [
         'sector' => '06 / Bien-être & événementiel',
         'name' => 'RESPIRA',
         'description' => 'Une expérience de bien-être racontée à travers trois formats vidéo.',
-        'image' => 'assets/images/projects/respira/respira-cover.jpg',
+        'image' => (is_file(__DIR__ . '/../assets/images/projects/respira/respira-brand-cover.png') ? 'assets/images/projects/respira/respira-brand-cover.png' : 'assets/images/projects/respira/respira-cover.jpg'),
         'context' => 'Un événement autour de la détente et des expériences de bien-être.',
         'objective' => 'Retranscrire l’ambiance de l’événement et mettre en valeur les moments vécus par les participants.',
         'intervention' => 'Présentation de trois contenus audiovisuels : un témoignage face caméra, une immersion dans l’événement et un Reel récapitulatif.',
@@ -34,7 +34,7 @@ return [
                 'src' => 'assets/videos/respira/respira-reel.mp4',
                 'title' => 'Reel récapitulatif',
                 'caption' => 'Un montage court des temps forts de l’événement.',
-                'poster' => 'assets/images/projects/respira/respira-cover.jpg'
+                'poster' => (is_file(__DIR__ . '/../assets/images/projects/respira/respira-brand-cover.png') ? 'assets/images/projects/respira/respira-brand-cover.png' : 'assets/images/projects/respira/respira-cover.jpg')
             ]
         ]
     ],
