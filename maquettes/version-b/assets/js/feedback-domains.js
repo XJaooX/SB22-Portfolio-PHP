@@ -9,24 +9,25 @@
   const description = document.getElementById('domain-description');
   const count = document.getElementById('domain-count');
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const domains = {
-    tous: {
-      title: 'Des projets concrets, des identités singulières.',
-      description: 'Publications, supports graphiques et campagnes Meta Ads. Le travail de SB22 Agency, présenté par expertise.'
-    },
-    'social-media': {
-      title: 'Une communication pensée pour les réseaux.',
-      description: 'Créations Instagram et Facebook pour Kuba Home et Plumes de Cœur Éditions.'
-    },
-    'design-graphique': {
-      title: 'Des identités visibles dans l’espace.',
-      description: 'Habillage de vitrine et signalétique pour Plumes de Cœur Éditions.'
-    },
-    'meta-ads': {
-      title: 'Des campagnes conçues pour être vues.',
-      description: 'Campagnes Meta Ads et vidéos publicitaires de Kid Fitness Lexy et Youplaboom.'
-    }
-  };
+  const domains = {};
+  filters.forEach(button => {
+    const domain = button.dataset.domainFilter;
+    domains[domain] = {
+      title: button.dataset.domainTitle,
+      description: button.dataset.domainDescription
+    };
+  });
+  const modalOrder = cards.map(card => card.dataset.project);
+  modalOrder.forEach((id,index) => {
+    const modal = document.getElementById('project-' + id);
+    if (!modal) return;
+    const nav = modal.querySelector('.book-case-bottom');
+    if (!nav) return;
+    const buttons = nav.querySelectorAll('[data-open-project]');
+    if (buttons.length !== 2) return;
+    buttons[0].setAttribute('data-open-project',modalOrder[(index + modalOrder.length - 1) % modalOrder.length]);
+    buttons[1].setAttribute('data-open-project',modalOrder[(index + 1) % modalOrder.length]);
+  });
   let selected = 'tous';
   function filter(domain, remember) {
     if (!Object.prototype.hasOwnProperty.call(domains,domain)) domain='tous';
