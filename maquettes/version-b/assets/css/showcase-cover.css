@@ -1,0 +1,36 @@
+
+.portfolio-immersive .pr-stage-image {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    background-color: #eae9e6;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-immersive .pr-stage-image.has-pair {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+    grid-template-rows: minmax(0, 1fr);
+}
+.portfolio-immersive .pr-stage-image > img {
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.portfolio-immersive .pr-stage-image:not(.has-pair) > img {
+    padding: 0;
+    background: transparent;
+}
+.portfolio-immersive .pr-stage-image[data-cover-fit="cover"]:not(.has-pair) > #pr-stage-image {
+    object-fit: cover;
+}
+.portfolio-immersive .pr-stage-image[data-cover-fit="contain"]:not(.has-pair) > #pr-stage-image {
+    object-fit: contain;
+}
+.portfolio-immersive .pr-stage-image > img[hidden] {
+    display: none !important;
+}

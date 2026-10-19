@@ -1,0 +1,234 @@
+/* Cinematic portfolio motion — no layout or content changes. */
+@keyframes sb22-entrance {
+  from { opacity:0; transform:translate3d(0,35px,0); filter:blur(5px); }
+  to { opacity:1; transform:translate3d(0,0,0); filter:blur(0); }
+}
+@keyframes sb22-slide-label {
+  from { opacity:0; transform:translate3d(-26px,0,0); }
+  to { opacity:1; transform:translate3d(0,0,0); }
+}
+@keyframes sb22-image-zoom {
+  from { transform:scale(1.11); filter:saturate(.82); }
+  to { transform:scale(1); filter:saturate(1); }
+}
+@keyframes sb22-curtain-open {
+  from { transform:translate3d(0,0,0); }
+  to { transform:translate3d(102%,0,0); }
+}
+@keyframes sb22-case-open {
+  from { opacity:0; transform:translate3d(0,48px,0) scale(.985); }
+  to { opacity:1; transform:translate3d(0,0,0) scale(1); }
+}
+@keyframes sb22-case-image {
+  from { opacity:.2; clip-path:inset(0 0 100% 0); transform:scale(1.065); }
+  to { opacity:1; clip-path:inset(0 0 0 0); transform:scale(1); }
+}
+@keyframes sb22-line-grow {
+  from { transform:scaleX(0); }
+  to { transform:scaleX(1); }
+}
+
+/* A distinct editorial opening on the homepage. */
+.sb22-wow-ready.portfolio-immersive .sb22-home .sb22-home-kicker {
+  animation:sb22-slide-label .75s cubic-bezier(.2,.8,.2,1) both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .sb22-home-title {
+  animation:sb22-entrance 1s cubic-bezier(.2,.8,.2,1) .13s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .sb22-home-title em {
+  animation:sb22-entrance .95s cubic-bezier(.2,.8,.2,1) .38s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-intro {
+  animation:sb22-entrance .85s cubic-bezier(.2,.8,.2,1) .48s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-label {
+  animation:sb22-slide-label .8s cubic-bezier(.2,.8,.2,1) .65s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-card {
+  animation:sb22-entrance .8s cubic-bezier(.2,.8,.2,1) both;
+  animation-delay:calc(.68s + var(--sb22-stagger,0) * .105s);
+  transition:transform .34s cubic-bezier(.16,1,.3,1),background .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-card:hover,
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-card:focus-visible {
+  transform:translate3d(0,-3px,0);
+  box-shadow:0 10px 22px rgba(0,0,0,.15);
+}
+
+/* Cover unveil: the visual is now animated, not just a text hover. */
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-image {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-image::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:5;
+  background:#071936;
+  pointer-events:none;
+  animation:sb22-curtain-open 1.05s cubic-bezier(.8,0,.15,1) .35s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-image > img {
+  animation:sb22-image-zoom 1.25s cubic-bezier(.18,.65,.2,1) .30s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-top {
+  animation:sb22-entrance .75s ease .4s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-content {
+  animation:sb22-entrance .95s cubic-bezier(.2,.8,.2,1) .62s both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta {
+  position:relative;
+  overflow:hidden;
+  transition:background .32s ease,color .32s ease,border-color .32s ease;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta:hover,
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta:focus-visible {
+  background:white;
+  color:#040f25;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta svg {
+  transition:transform .32s ease;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta:hover svg,
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage-cta:focus-visible svg {
+  transform:translateX(5px);
+}
+
+/* Every change of the active project replays the same unveil. */
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage.is-switching .pr-stage-image::after {
+  animation:sb22-curtain-open .74s cubic-bezier(.8,0,.15,1) both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage.is-switching .pr-stage-image > img {
+  animation:sb22-image-zoom .92s cubic-bezier(.18,.65,.2,1) both;
+}
+.sb22-wow-ready.portfolio-immersive .sb22-home .pr-stage.is-switching .pr-stage-content {
+  animation:sb22-entrance .7s cubic-bezier(.2,.8,.2,1) both;
+}
+
+/* A clear physical response to project cards without compromising content. */
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card.is-visible {
+  transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.2,1),box-shadow .4s ease !important;
+  transition-delay:calc(var(--sb22-stagger,0) * .075s);
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card.is-visible:hover,
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card.is-visible:focus-visible {
+  transform:translate3d(0,-7px,0) !important;
+  box-shadow:0 23px 50px rgba(4,15,37,.19) !important;
+  transition-delay:0s;
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card .kg-card-visuals img {
+  transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .65s ease !important;
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card:hover .kg-card-visuals img,
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card:focus-visible .kg-card-visuals img {
+  transform:scale(1.075) !important;
+  filter:saturate(1.09);
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card .kg-card-discover svg {
+  transition:transform .3s ease;
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-project-card:hover .kg-card-discover svg {
+  transform:translateX(5px);
+}
+
+/* A project sheet feels like a page, not a window popping into existence. */
+.sb22-wow-ready.portfolio-gallery-page .kg-page .project-modal.open .book-modal-box {
+  animation:sb22-case-open .65s cubic-bezier(.2,.75,.2,1) both;
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-page .project-modal.open .book-case-cover img {
+  animation:sb22-case-image .9s cubic-bezier(.2,.8,.2,1) .2s both;
+}
+.sb22-wow-ready.portfolio-gallery-page .kg-page .project-modal.open .book-case-heading {
+  animation:sb22-entrance .75s cubic-bezier(.2,.8,.2,1) .12s both;
+}
+.sb22-wow-ready .sb22-about-story .sb22-about-images figure img {
+  transition:transform .6s cubic-bezier(.2,.75,.2,1);
+}
+.sb22-wow-ready .sb22-about-story .sb22-about-images figure:hover img {
+  transform:scale(1.035);
+}
+.sb22-wow-ready .sb22-about-copy h2 {
+  position:relative;
+}
+.sb22-wow-ready .sb22-about-process-grid article {
+  transition:transform .35s ease,border-color .35s ease;
+}
+.sb22-wow-ready .sb22-about-process-grid article:hover {
+  transform:translate3d(0,-5px,0);
+  border-color:#6486bb;
+}
+
+/* An understated reading-progress line below the sticky navigation. */
+.sb22-scroll-progress {
+  position:fixed;
+  left:0;
+  top:70px;
+  width:100%;
+  height:3px;
+  z-index:1600;
+  pointer-events:none;
+  transform-origin:left;
+  transform:scaleX(var(--sb22-scroll,0));
+  background:linear-gradient(90deg,#587eb5,#d6e2ff);
+  transition:transform .12s linear;
+}
+@media(max-width:800px) {
+  .sb22-scroll-progress {top:64px;height:2px}
+  .sb22-wow-ready.portfolio-immersive .sb22-home .pr-rail-card {animation-duration:.68s}
+}
+@media(prefers-reduced-motion:reduce) {
+  .sb22-wow-ready *,
+  .sb22-wow-ready *::before,
+  .sb22-wow-ready *::after {
+    animation:none !important;
+    transition-duration:.01ms !important;
+    transition-delay:0s !important;
+  }
+  .sb22-wow-ready.portfolio-gallery-page .kg-project-card.is-visible:hover {transform:none !important}
+  .sb22-scroll-progress {transition:none}
+}
+
+/* Accès immédiat aux trois expertises depuis l’accueil. */
+.portfolio-immersive .sb22-home .sb22-home-domains {
+  order:3;
+  padding:0 clamp(26px,4vw,70px) 34px;
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+}
+.portfolio-immersive .sb22-home .sb22-home-domains a {
+  display:inline-flex;
+  min-height:39px;
+  align-items:center;
+  padding:9px 12px;
+  color:#142846;
+  background:#eff3fa;
+  border:1px solid #c6d2e6;
+  border-radius:3px;
+  font:600 11px/1.3 var(--sb22-body),sans-serif;
+  transition:background .25s,color .25s,transform .25s;
+}
+.portfolio-immersive .sb22-home .sb22-home-domains a:hover,
+.portfolio-immersive .sb22-home .sb22-home-domains a:focus-visible {
+  color:white;
+  background:#040f25;
+  transform:translateY(-2px);
+}
+@media(max-width:760px){
+  .portfolio-immersive .sb22-home .sb22-home-domains {
+    padding:0 18px 27px;
+    gap:6px;
+  }
+  .portfolio-immersive .sb22-home .sb22-home-domains a{
+    font-size:10px;
+    min-height:40px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .portfolio-immersive .sb22-home .sb22-home-domains a {
+    transition:none;transform:none !important;
+  }
+}

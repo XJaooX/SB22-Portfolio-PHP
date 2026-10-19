@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- UTF-8 supports accented characters; viewport adapts the page to mobile screen widths. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- $pageTitle appears in the browser tab; the meta description helps describe the website to search engines. -->
+    <title>Réalisations — SB22 Agency</title>
+    <meta name="description" content="Portfolio SB22 Agency. Découvrez les publications, vidéos, créations graphiques et signalétique réalisées pour nos clients.">
+
+    <!-- Google Fonts provides Cormorant Garamond for headings and Plus Jakarta Sans for body text. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- The CSS file controls colors, sizes, spacing, grids, and responsive layout. -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/portfolio-layout.css">
+    <link rel="stylesheet" href="../../assets/css/design-unified.css">
+    <link rel="stylesheet" href="../../assets/css/brand-official.css">
+    <link rel="stylesheet" href="../../assets/css/maquette-watermark.css">
+    <link rel="stylesheet" href="../../assets/css/feedback-sebaa.css">
+    <link rel="stylesheet" href="../../assets/css/feedback-final.css">
+    <link rel="stylesheet" href="../../assets/css/feedback-wow.css">
+    <link rel="stylesheet" href="../../assets/css/feedback-domains.css">
+</head>
+<body class="portfolio-gallery-page">
+
+<!-- Fixed MAQUETTE announcement banner, with separate text for desktop and mobile. -->
+
+
+<!-- Fixed navigation: logo, page links, contact button, and mobile menu control. -->
+<header class="site-header" id="site-header">
+    <div class="nav-container">
+
+        <!-- The logo links to index.php; $basePath ensures the correct URL and image path. -->
+        <a class="brand" href="../../index.html" aria-label="SB22 Agency - Accueil">
+            <img src="../../assets/images/branding/sb22-logo-white-transparent.png" alt="SB22 Agency">
+            <div class="brand-text">
+                <span class="brand-name">SB22</span>
+                <span class="brand-subtitle">Agency</span>
+            </div>
+        </a>
+
+        <!-- DESKTOP LINKS: each condition adds the active class to the current page. -->
+        <nav class="main-nav">
+            <a class="" href="../../index.html">Accueil</a>
+            <a class="active" href="../../pages/projets/projets.html">Projets</a>
+            <a class="" href="../../pages/agence/agence.html">À propos</a>
+            <a class="" href="../../pages/contact/contact.html">Contact</a>
+        </nav>
+
+        <!-- Highlighted contact link, with a different class on the Contact page. -->
+        <span class="sb22-maquette-mark" role="note">MAQUETTE</span>
+        <a class="nav-contact " href="../../pages/contact/contact.html">
+            <span>Nous contacter</span>
+            <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+
+        <!-- main.js finds this button by its mobile-menu-button ID and toggles its open class. -->
+        <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- MOBILE LINKS: shown when main.js adds the open class to the mobile-menu element. -->
+<div class="mobile-menu" id="mobile-menu">
+    <nav>
+        <a class="" href="../../index.html">Accueil</a>
+        <a class="active" href="../../pages/projets/projets.html">Projets</a>
+        <a class="" href="../../pages/agence/agence.html">À propos</a>
+        <a class="" href="../../pages/contact/contact.html">Contact</a>
+    </nav>
+
+    <a class="mobile-contact" href="../../pages/contact/contact.html">Nous contacter</a>
+</div>
+<div id="top"></div>
+<main class="projects-page kg-page sb22-domain-page">
+    <div class="kg-shell">
+        <aside class="kg-filters" aria-label="Navigation par domaine d’expertise">
+            <div class="kg-filter-inner">
+                <p class="kg-sidebar-overline">SB22 Agency · Portfolio</p>
+                <h1>Nos<br>projets<span>.</span></h1>
+                <p class="sb22-domain-aside-intro">Découvrez nos réalisations par domaine d’expertise.</p>
+                <div class="kg-filter-group">
+                    <h2>Domaines d’expertise</h2>
+                    <nav class="sb22-domain-filters" aria-label="Sélection du domaine">
+                        <button class="kg-filter-pill sb22-domain-filter active" type="button" data-domain-filter="tous" aria-pressed="true"><span>Toutes les réalisations</span><small>05</small></button>
+<button class="kg-filter-pill sb22-domain-filter" type="button" data-domain-filter="social-media" aria-pressed="false"><span>Social Media Management</span><small>02</small></button>
+<button class="kg-filter-pill sb22-domain-filter" type="button" data-domain-filter="design-graphique" aria-pressed="false"><span>Design graphique &amp; signalétique</span><small>01</small></button>
+<button class="kg-filter-pill sb22-domain-filter" type="button" data-domain-filter="meta-ads" aria-pressed="false"><span>Campagnes publicitaires Meta Ads</span><small>02</small></button>
+                    </nav>
+                </div>
+                <a class="kg-sidebar-contact" href="../contact/contact.html">Parlons de votre projet</a>
+            </div>
+        </aside>
+        <section class="kg-work" aria-label="Galerie des réalisations">
+            <div class="kg-work-heading">
+                <div>
+                    <span class="kg-eyebrow">SB22 Agency / Réalisations</span>
+                    <h2 class="sb22-domain-heading" id="domain-heading">Des projets concrets, des identités singulières.</h2>
+                    <p id="domain-description">Publications, supports graphiques et campagnes Meta Ads. Le travail de la SB22 Agency, présenté par expertise.</p>
+                </div>
+                <span class="sb22-domain-count" id="domain-count" aria-live="polite">05 réalisations</span>
+            </div>
+            <div class="kg-card-deck" id="projects-grid" tabindex="0">
+                
+<article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="social-media"
+   tabindex="0" role="button" data-project="kuba-home" aria-label="Découvrir Kuba Home — Social Media Management">
+    <div class="kg-card-visuals"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="Kuba Home — réalisation SB22 Agency" loading="lazy"></div>
+    <div class="kg-card-top"><span>Social Media Management</span></div>
+    <div class="kg-card-bottom">
+        <span class="kg-card-number">01 / Aménagement intérieur</span>
+        <h2>Kuba Home</h2>
+        <p>Une vitrine digitale premium pour les créations de Kuba Home.</p>
+        <span class="kg-card-discover">Voir les réalisations <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+    </div>
+</article>
+
+<article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="social-media"
+   tabindex="0" role="button" data-project="plumes-social" aria-label="Découvrir Plumes de Cœur Éditions — Social Media Management">
+    <div class="kg-card-visuals"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg" alt="Plumes de Cœur Éditions — réalisation SB22 Agency" loading="lazy"></div>
+    <div class="kg-card-top"><span>Social Media Management</span></div>
+    <div class="kg-card-bottom">
+        <span class="kg-card-number">02 / Édition</span>
+        <h2>Plumes de Cœur Éditions</h2>
+        <p>Faire connaître la maison d’édition et son univers sur les réseaux sociaux.</p>
+        <span class="kg-card-discover">Voir les réalisations <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+    </div>
+</article>
+
+<article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="design-graphique"
+   tabindex="0" role="button" data-project="plumes-signaletique" aria-label="Découvrir Plumes de Cœur Éditions — Design graphique &amp; signalétique">
+    <div class="kg-card-visuals"><img src="../../assets/images/projects/plumes-de-coeur/plumes-2.jpg" alt="Plumes de Cœur Éditions — réalisation SB22 Agency" loading="lazy"></div>
+    <div class="kg-card-top"><span>Design graphique &amp; signalétique</span></div>
+    <div class="kg-card-bottom">
+        <span class="kg-card-number">03 / Édition</span>
+        <h2>Plumes de Cœur Éditions</h2>
+        <p>Une identité éditoriale visible aussi dans l’espace physique.</p>
+        <span class="kg-card-discover">Voir les réalisations <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+    </div>
+</article>
+
+<article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="meta-ads"
+   tabindex="0" role="button" data-project="kid-fitness-lexy" aria-label="Découvrir Kid Fitness Lexy — Campagnes publicitaires Meta Ads">
+    <div class="kg-card-visuals"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" alt="Kid Fitness Lexy — réalisation SB22 Agency" loading="lazy"></div>
+    <div class="kg-card-top"><span>Campagnes publicitaires Meta Ads</span></div>
+    <div class="kg-card-bottom">
+        <span class="kg-card-number">04 / Activités pour enfants</span>
+        <h2>Kid Fitness Lexy</h2>
+        <p>Promouvoir les journées portes ouvertes et encourager les inscriptions.</p>
+        <span class="kg-card-discover">Voir les réalisations <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+    </div>
+</article>
+
+<article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="meta-ads"
+   tabindex="0" role="button" data-project="youplaboom-meta" aria-label="Découvrir Youplaboom — Campagnes publicitaires Meta Ads">
+    <div class="kg-card-visuals"><img src="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" alt="Youplaboom — réalisation SB22 Agency" loading="lazy"></div>
+    <div class="kg-card-top"><span>Campagnes publicitaires Meta Ads</span></div>
+    <div class="kg-card-bottom">
+        <span class="kg-card-number">05 / Petite enfance</span>
+        <h2>Youplaboom</h2>
+        <p>Développer la visibilité locale de la microcrèche.</p>
+        <span class="kg-card-discover">Voir les réalisations <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+    </div>
+</article>
+            </div>
+            <div class="kg-gallery-foot"><span>Communication · Création graphique · Publicité</span><a href="../../index.html">Retour à l’accueil</a></div>
+        </section>
+    </div>
+    
+<div class="project-modal" id="project-kuba-home" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Kuba Home — Social Media Management">
+    <div class="project-modal-background" data-close-modal></div>
+    <article class="project-modal-box book-modal-box">
+        <div class="project-modal-top">
+            <button type="button" data-close-modal>← Tous les projets</button>
+            <span>SB22 Agency · Portfolio</span>
+            <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
+        </div>
+        <header class="book-case-heading">
+            <p class="book-overline">Aménagement intérieur / 2026</p>
+            <h2>Kuba Home</h2>
+            <p>Une vitrine digitale premium pour les créations de Kuba Home.</p>
+            <span class="book-case-category">Social Media Management</span>
+        </header>
+        <figure class="book-case-cover"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="Présentation du projet Kuba Home" loading="lazy"></figure>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Une vitrine digitale premium pour les créations de Kuba Home.</p></div><div><span>Son objectif</span><p>Valoriser les cuisines, salles de bain et dressings de l’enseigne sur Instagram, avec une diffusion complémentaire sur Facebook.</p></div><div><span>Notre intervention</span><p>Définition de la ligne éditoriale, création des contenus, planification des publications et suivi de la communication.</p></div></div></section>
+        <div class="book-case-media"><section class="book-case-section" aria-label="Réalisations graphiques">
+        <h3>Les réalisations</h3>
+        <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-02.jpg" loading="lazy" alt="Publication Instagram — visuel de réalisation"><figcaption>Publication Instagram — visuel de réalisation</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-03.jpg" loading="lazy" alt="Publication Instagram — communication de marque"><figcaption>Publication Instagram — communication de marque</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-01.jpg" loading="lazy" alt="Publication Instagram — création graphique"><figcaption>Publication Instagram — création graphique</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-before-after.jpg" loading="lazy" alt="Contenu comparatif avant / après"><figcaption>Contenu comparatif avant / après</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-01.jpg" loading="lazy" alt="Déclinaison graphique pour les réseaux sociaux"><figcaption>Déclinaison graphique pour les réseaux sociaux</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-04.jpg" loading="lazy" alt="Autre publication de la série"><figcaption>Autre publication de la série</figcaption></figure></div>
+        </section></div>
+        <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
+            <button type="button" data-open-project="youplaboom-meta">← Projet précédent</button>
+            <button type="button" data-open-project="plumes-social">Projet suivant →</button>
+        </nav>
+    </article>
+</div>
+
+<div class="project-modal" id="project-plumes-social" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Plumes de Cœur Éditions — Social Media Management">
+    <div class="project-modal-background" data-close-modal></div>
+    <article class="project-modal-box book-modal-box">
+        <div class="project-modal-top">
+            <button type="button" data-close-modal>← Tous les projets</button>
+            <span>SB22 Agency · Portfolio</span>
+            <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
+        </div>
+        <header class="book-case-heading">
+            <p class="book-overline">Édition / 2026</p>
+            <h2>Plumes de Cœur Éditions</h2>
+            <p>Faire connaître la maison d’édition et son univers sur les réseaux sociaux.</p>
+            <span class="book-case-category">Social Media Management</span>
+        </header>
+        <figure class="book-case-cover"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg" alt="Présentation du projet Plumes de Cœur Éditions" loading="lazy"></figure>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Faire connaître la maison d’édition et son univers sur les réseaux sociaux.</p></div><div><span>Son objectif</span><p>Développer la visibilité de Plumes de Cœur Éditions et valoriser son univers éditorial sur Facebook et Instagram.</p></div><div><span>Notre intervention</span><p>Conception de publications sociales et développement d’une communication graphique cohérente.</p></div></div></section>
+        <div class="book-case-media"><section class="book-case-section" aria-label="Réalisations graphiques">
+        <h3>Les réalisations</h3>
+        <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg" loading="lazy" alt="Publication sociale — actualité éditoriale"><figcaption>Publication sociale — actualité éditoriale</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/aventure-editoriale.jpg" loading="lazy" alt="Publication sociale — univers de la maison d’édition"><figcaption>Publication sociale — univers de la maison d’édition</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/lecteurs.jpg" loading="lazy" alt="Publication sociale — lecteurs et littérature"><figcaption>Publication sociale — lecteurs et littérature</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/catalogue-publics.jpg" loading="lazy" alt="Publication sociale — catalogue et nouveautés"><figcaption>Publication sociale — catalogue et nouveautés</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/festival-yann-thomas.jpg" loading="lazy" alt="Publication sociale — événement culturel"><figcaption>Publication sociale — événement culturel</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/zoom-auteur.jpg" loading="lazy" alt="Publication sociale — mise en valeur d’un auteur"><figcaption>Publication sociale — mise en valeur d’un auteur</figcaption></figure></div>
+        </section></div>
+        <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
+            <button type="button" data-open-project="kuba-home">← Projet précédent</button>
+            <button type="button" data-open-project="plumes-signaletique">Projet suivant →</button>
+        </nav>
+    </article>
+</div>
+
+<div class="project-modal" id="project-plumes-signaletique" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Plumes de Cœur Éditions — Design graphique &amp; signalétique">
+    <div class="project-modal-background" data-close-modal></div>
+    <article class="project-modal-box book-modal-box">
+        <div class="project-modal-top">
+            <button type="button" data-close-modal>← Tous les projets</button>
+            <span>SB22 Agency · Portfolio</span>
+            <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
+        </div>
+        <header class="book-case-heading">
+            <p class="book-overline">Édition / 2026</p>
+            <h2>Plumes de Cœur Éditions</h2>
+            <p>Une identité éditoriale visible aussi dans l’espace physique.</p>
+            <span class="book-case-category">Design graphique &amp; signalétique</span>
+        </header>
+        <figure class="book-case-cover"><img src="../../assets/images/projects/plumes-de-coeur/plumes-2.jpg" alt="Présentation du projet Plumes de Cœur Éditions" loading="lazy"></figure>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Une identité éditoriale visible aussi dans l’espace physique.</p></div><div><span>Son objectif</span><p>Renforcer la visibilité de la maison d’édition et traduire son identité à travers son environnement physique.</p></div><div><span>Notre intervention</span><p>Conception graphique de la vitrine, création des supports de signalétique et cohérence de l’ensemble.</p></div></div></section>
+        <div class="book-case-media"><section class="book-case-section" aria-label="Réalisations graphiques">
+        <h3>Les réalisations</h3>
+        <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-2.jpg" loading="lazy" alt="Conception graphique et habillage de vitrine"><figcaption>Conception graphique et habillage de vitrine</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-1.jpg" loading="lazy" alt="Panneau et signalétique extérieure"><figcaption>Panneau et signalétique extérieure</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-3.jpg" loading="lazy" alt="Autre vue des supports en situation"><figcaption>Autre vue des supports en situation</figcaption></figure>
+<figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-4.jpg" loading="lazy" alt="Détail de la réalisation graphique"><figcaption>Détail de la réalisation graphique</figcaption></figure></div>
+        </section></div>
+        <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
+            <button type="button" data-open-project="plumes-social">← Projet précédent</button>
+            <button type="button" data-open-project="kid-fitness-lexy">Projet suivant →</button>
+        </nav>
+    </article>
+</div>
+
+<div class="project-modal" id="project-kid-fitness-lexy" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Kid Fitness Lexy — Campagnes publicitaires Meta Ads">
+    <div class="project-modal-background" data-close-modal></div>
+    <article class="project-modal-box book-modal-box">
+        <div class="project-modal-top">
+            <button type="button" data-close-modal>← Tous les projets</button>
+            <span>SB22 Agency · Portfolio</span>
+            <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
+        </div>
+        <header class="book-case-heading">
+            <p class="book-overline">Activités pour enfants / Janvier 2026</p>
+            <h2>Kid Fitness Lexy</h2>
+            <p>Promouvoir les journées portes ouvertes et encourager les inscriptions.</p>
+            <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
+        </header>
+        <figure class="book-case-cover"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" alt="Présentation du projet Kid Fitness Lexy" loading="lazy"></figure>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Promouvoir les journées portes ouvertes et encourager les inscriptions.</p></div><div><span>Son objectif</span><p>Faire connaître les journées portes ouvertes de janvier 2026 et attirer de nouvelles familles.</p></div><div><span>Notre intervention</span><p>Conception d’une campagne publicitaire destinée à Facebook et Instagram, avec supports adaptés aux publications et stories.</p></div></div></section>
+        <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
+        <div class="sb22-video-copy">
+            <span>Les réalisations · en vidéo</span><h3>La vidéo publicitaire</h3>
+            <p>Visuel promotionnel et vidéo publicitaire mettant en avant l’événement.</p>
+        </div>
+        <div class="sb22-video-container">
+            <video controls playsinline preload="metadata" poster="../../assets/images/projects/kid-fitness/kid-fitness-video-cover.jpg" aria-label="La vidéo publicitaire">
+              <source src="../../assets/videos/kid-fitness/kid-fitness-meta.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge cette vidéo.
+            </video>
+        </div></section><section class="book-case-section" aria-label="Réalisations graphiques">
+        <h3>Les réalisations</h3>
+        <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" loading="lazy" alt="Support graphique promotionnel de la campagne"><figcaption>Support graphique promotionnel de la campagne</figcaption></figure></div>
+        </section></div>
+        <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
+            <button type="button" data-open-project="plumes-signaletique">← Projet précédent</button>
+            <button type="button" data-open-project="youplaboom-meta">Projet suivant →</button>
+        </nav>
+    </article>
+</div>
+
+<div class="project-modal" id="project-youplaboom-meta" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Youplaboom — Campagnes publicitaires Meta Ads">
+    <div class="project-modal-background" data-close-modal></div>
+    <article class="project-modal-box book-modal-box">
+        <div class="project-modal-top">
+            <button type="button" data-close-modal>← Tous les projets</button>
+            <span>SB22 Agency · Portfolio</span>
+            <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
+        </div>
+        <header class="book-case-heading">
+            <p class="book-overline">Petite enfance / 2026</p>
+            <h2>Youplaboom</h2>
+            <p>Développer la visibilité locale de la microcrèche.</p>
+            <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
+        </header>
+        <figure class="book-case-cover"><img src="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" alt="Présentation du projet Youplaboom" loading="lazy"></figure>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Développer la visibilité locale de la microcrèche.</p></div><div><span>Son objectif</span><p>Faire connaître la microcrèche auprès des familles et encourager les demandes d’inscription.</p></div><div><span>Notre intervention</span><p>Création d’une vidéo promotionnelle pour une campagne Meta Ads diffusée sur Facebook et Instagram.</p></div></div></section>
+        <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
+        <div class="sb22-video-copy">
+            <span>Les réalisations · en vidéo</span><h3>La campagne vidéo Meta Ads</h3>
+            <p>Vidéo publicitaire verticale, également adaptée à une diffusion au format Reel.</p>
+        </div>
+        <div class="sb22-video-container">
+            <video controls playsinline preload="metadata" poster="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" aria-label="La campagne vidéo Meta Ads">
+              <source src="../../assets/videos/youplaboom/youplaboom-meta.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge cette vidéo.
+            </video>
+        </div></section></div>
+        <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
+            <button type="button" data-open-project="kid-fitness-lexy">← Projet précédent</button>
+            <button type="button" data-open-project="kuba-home">Projet suivant →</button>
+        </nav>
+    </article>
+</div>
+</main>
+<!-- FOOTER GUIDE: this block is included at the bottom of every page. Edit contact details, social links, and footer navigation here. The $basePath variable keeps the links valid from both the root and pages/ directory. The main JavaScript file is loaded here after the HTML content. -->
+<!-- This footer is shared by every page. -->
+<footer class="site-footer">
+    <div class="footer-inner">
+
+        <!-- Main footer section. -->
+        <div class="footer-grid">
+
+            <!-- Agency identity: logo, introduction, email, and phone number. -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../../assets/images/branding/sb22-logo-white.png" alt="SB22 Agency">
+                    <div class="footer-brand-text">
+                        <span class="footer-brand-name">SB22</span>
+                        <span class="footer-brand-subtitle">Agency</span>
+                    </div>
+                </div>
+
+                <p class="footer-description">
+                    Agence de relations publiques et de communication, avec une approche humaine et stratégique.
+                </p>
+
+                <div class="footer-contact">
+                    <a href="mailto:contact@sb22agency.com">contact@sb22agency.com</a>
+                    <a href="tel:0673031202">06 73 03 12 02</a>
+                </div>
+            </div>
+
+            <!-- Repeat the main navigation links so visitors can navigate from the bottom of a page. -->
+            <div class="footer-column">
+                <span class="footer-title">Navigation</span>
+                <a href="../../index.html">Accueil</a>
+                <a href="../../pages/agence/agence.html">À propos</a>
+                <a href="../../pages/projets/projets.html">Projets sélectionnés</a>
+                <a href="../../pages/contact/contact.html">Contact</a>
+            </div>
+
+            <!-- External links: target=_blank opens a new tab and rel=noreferrer hides the referring page. -->
+            <div class="footer-column footer-links">
+                <span class="footer-title">Réseaux & Liens</span>
+
+                <a href="https://www.instagram.com/sb22agency/" target="_blank" rel="noopener noreferrer">
+                    Instagram @sb22agency <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a href="https://www.facebook.com/people/SB-22/61580109419316/" target="_blank" rel="noopener noreferrer">
+                    Facebook SB22 Agency <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a class="official-site" href="https://www.sb22agency.com" target="_blank" rel="noreferrer">
+                    Site officiel sb22agency.com <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </a>
+
+                <a class="back-to-top" href="#top">Haut de page <span>↑</span></a>
+            </div>
+        </div>
+
+        <!-- date("Y") displays the current year automatically; the legal links using # are placeholders. -->
+        <div class="footer-bottom">
+            <p>© 2026 SB22 Agency. Portfolio.</p>
+
+            
+        </div>
+    </div>
+</footer>
+
+<!-- main.js manages the mobile menu, project filters, modals, carousels, contact form, and accordions. -->
+<script src="../../assets/js/main.js"></script>
+
+<!-- Closes the body and html elements opened by includes/header.php. -->
+    <script src="../../assets/js/feedback-final.js" defer></script>
+    <script src="../../assets/js/feedback-wow.js" defer></script>
+    <script src="../../assets/js/feedback-domains.js" defer></script>
+</body>
+</html>
