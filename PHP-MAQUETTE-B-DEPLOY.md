@@ -17,3 +17,11 @@ Les médias, les animations et les styles sont conservés depuis la maquette B o
 ## Contact
 
 Le formulaire est une démonstration et n'envoie pas d'e-mails. Aucun message n'est transmis tant qu'un service de messagerie n'est pas configuré.
+
+## Publication GitHub
+
+Branche prévue: stage/php-maquette-b-20261019.
+Le document root du site PHP est /home/jaooooo/sb22-portfolio/maquettes/version-b/ si le dépôt est cloné vers /home/jaooooo/sb22-portfolio.
+La racine principale du dépôt ne contient pas cette version visuelle: utiliser le sous-dossier maquettes/version-b.
+La configuration Apache redirige les anciennes adresses HTML de la maquette vers les pages PHP; valider les redirections après la publication sur alwaysdata.
+Le formulaire de contact reste volontairement en mode démonstration.

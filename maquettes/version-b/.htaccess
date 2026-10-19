@@ -1,1 +1,10 @@
 DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^index\.html$ index.php [R=302,L,NC]
+RewriteRule ^pages/(agence/agence|contact/contact|contact/merci|expertises/expertises|projets/projets)\.html$ pages/$1.php [R=302,L,NC]
+RewriteRule ^pages/projets/projets--social-media(?:--[^/]+)?\.html$ pages/projets/projets.php?domaine=social-media [R=302,L,NC,NE]
+RewriteRule ^pages/projets/projets--digital(?:--[^/]+)?\.html$ pages/projets/projets.php?domaine=meta-ads [R=302,L,NC,NE]
+RewriteRule ^pages/projets/projets--communication(?:--[^/]+)?\.html$ pages/projets/projets.php?domaine=design-graphique [R=302,L,NC,NE]
+RewriteRule ^pages/projets/projets--secteur-[^/]+\.html$ pages/projets/projets.php [R=302,L,NC]
+</IfModule>

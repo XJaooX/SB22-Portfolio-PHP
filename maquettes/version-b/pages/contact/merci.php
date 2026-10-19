@@ -1,7 +1,7 @@
 <?php
 $basePath = '../../';
 $currentPage = 'contact';
-$pageTitle = 'Message envoyé — SB22 Agency';
+$pageTitle = 'Contact — SB22 Agency';
 $bodyClass = 'portfolio-inner-page';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];

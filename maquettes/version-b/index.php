@@ -13,7 +13,7 @@ require __DIR__ . '/includes/navbar.php';
         <div class="pr-rail-top">
             <p class="sb22-home-kicker">SB22 Agency <span>· Portfolio</span></p>
             <h1 class="sb22-home-title">Chaque projet raconte <em>une histoire.</em></h1>
-            <p class="pr-rail-intro">Des projets concrets, des identités singulières. Découvrez une sélection de réalisations signées SB22 Agency.</p>
+            <p class="pr-rail-intro">De la stratégie aux réalisations, découvrez comment SB22 Agency accompagne les entreprises dans leur communication, leur image et leur visibilité, à travers des projets concrets.</p>
         </div>
         <div class="pr-rail-projects" aria-label="Choisir un projet">
             <div class="pr-rail-label"><span>Projets sélectionnés</span><span>04 projets</span></div>

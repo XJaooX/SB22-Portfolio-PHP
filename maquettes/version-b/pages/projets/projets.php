@@ -34,7 +34,7 @@ require __DIR__ . '/../../includes/navbar.php';
                 <div>
                     <span class="kg-eyebrow">SB22 Agency / Réalisations</span>
                     <h2 class="sb22-domain-heading" id="domain-heading">Des projets concrets, des identités singulières.</h2>
-                    <p id="domain-description">Publications, supports graphiques et campagnes Meta Ads. Le travail de la SB22 Agency, présenté par expertise.</p>
+                    <p id="domain-description">Publications, supports graphiques et campagnes Meta Ads. Le travail de SB22 Agency, présenté par expertise.</p>
                 </div>
                 <span class="sb22-domain-count" id="domain-count" aria-live="polite">05 réalisations</span>
             </div>
