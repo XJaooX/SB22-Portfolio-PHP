@@ -16,7 +16,7 @@ include '../../includes/navbar.php';
             <div>
                 <p class="eyebrow">Le portfolio · SB22 Agency</p>
                 <h1>Nos réalisations</h1>
-                <p>Des projets concrets, des identités singulières. Publications, créations graphiques et supports réalisés pour nos clients.</p>
+                <p>Découvrez les réalisations de SB22 Agency dans trois domaines : réseaux sociaux, design graphique et campagnes Meta Ads.</p>
             </div>
         </header>
 
@@ -34,8 +34,8 @@ include '../../includes/navbar.php';
         </div>
 
         <div class="projects-mobile-info">
-            <span>Une sélection de réalisations</span>
-            <span id="projects-count"><?php echo count($projects); ?> projets</span>
+            <span>Des réalisations par domaine d’expertise</span>
+            <span id="projects-count"><?php echo count($projects); ?> réalisations</span>
         </div>
 
         <div class="projects-grid">

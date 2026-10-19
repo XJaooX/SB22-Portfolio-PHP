@@ -1,2 +1,2 @@
 <?php
-return ['Tous', 'Social Media', 'Communication', 'Relations publiques', 'Photo & Vidéo', 'Digital'];;
+return ['Tous', 'Social Media Management', 'Design graphique & signalétique', 'Campagnes publicitaires Meta Ads'];

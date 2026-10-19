@@ -113,38 +113,49 @@ var projectFilters = document.querySelectorAll('.project-filter');
 var projectCards = document.querySelectorAll('.project-card');
 var projectsEmpty = document.getElementById('projects-empty');
 var projectsCount = document.getElementById('projects-count');
-
+var domainSlugs = {
+    'Social Media Management': 'social-media',
+    'Design graphique & signalétique': 'design-graphique',
+    'Campagnes publicitaires Meta Ads': 'meta-ads'
+};
+function applyProjectFilter(filter, syncUrl) {
+    var count = 0;
+    projectFilters.forEach(function (item) {
+        var active = item.getAttribute('data-filter') === filter;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    projectCards.forEach(function (card) {
+        var visible = filter === 'Tous' || card.getAttribute('data-category') === filter;
+        card.hidden = !visible;
+        card.style.display = visible ? '' : 'none';
+        if (visible) count++;
+    });
+    if (projectsEmpty) projectsEmpty.hidden = count !== 0;
+    if (projectsCount) projectsCount.textContent = count + (count === 1 ? ' réalisation' : ' réalisations');
+    if (syncUrl) {
+        var url = new URL(window.location.href);
+        if (filter === 'Tous') url.searchParams.delete('domaine');
+        else url.searchParams.set('domaine', domainSlugs[filter]);
+        window.history.pushState(null, '', url);
+    }
+}
 projectFilters.forEach(function (button) {
     button.addEventListener('click', function () {
-        var filter = button.getAttribute('data-filter');
-        var count = 0;
-
-        projectFilters.forEach(function (item) {
-            item.classList.remove('active');
-        });
-
-        button.classList.add('active');
-
-        projectCards.forEach(function (card) {
-            var category = card.getAttribute('data-category');
-
-            if (filter == 'Tous' || category == filter) {
-                card.style.display = '';
-                count++;
-            } else {
-                card.style.display = 'none';
-            }
-        });
-
-        if (projectsEmpty) {
-            projectsEmpty.hidden = count != 0;
-        }
-
-        if (projectsCount) {
-            projectsCount.textContent = count + (count == 1 ? ' projet' : ' projets');
-        }
+        applyProjectFilter(button.getAttribute('data-filter'), true);
     });
 });
+if (projectFilters.length) {
+    function filterFromUrl() {
+        var slug = new URLSearchParams(window.location.search).get('domaine');
+        var match = Object.keys(domainSlugs).find(function (name) {
+            return domainSlugs[name] === slug;
+        });
+        applyProjectFilter(match || 'Tous', false);
+    }
+    filterFromUrl();
+    window.addEventListener('popstate', filterFromUrl);
+}
 
 
 // modais

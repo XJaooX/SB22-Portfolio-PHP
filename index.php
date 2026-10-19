@@ -12,7 +12,7 @@ include 'includes/navbar.php';
         <div class="portfolio-intro-copy">
             <p class="portfolio-eyebrow"><span></span> Portfolio · SB22 Agency</p>
             <h1>Chaque projet raconte <em>une histoire.</em></h1>
-            <p class="portfolio-lead">Des projets concrets, des identités singulières. Découvrez une sélection de réalisations signées SB22 Agency, agence de relations publiques et de communication.</p>
+            <p class="portfolio-lead">De la stratégie aux réalisations, découvrez comment SB22 Agency accompagne les entreprises dans leur communication, leur image et leur visibilité, à travers des projets concrets.</p>
             <a class="portfolio-text-link" href="#realisations">Découvrir les projets <svg class="ui-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
 
@@ -76,6 +76,12 @@ include 'includes/navbar.php';
                 </div>
             </article>
         </div>
+
+        <nav class="sb22-expertise-links" aria-label="Domaines d’expertise">
+            <a href="pages/projets/projets.php?domaine=social-media">Social Media Management</a>
+            <a href="pages/projets/projets.php?domaine=design-graphique">Design graphique &amp; signalétique</a>
+            <a href="pages/projets/projets.php?domaine=meta-ads">Campagnes publicitaires Meta Ads</a>
+        </nav>
 
         <div class="portfolio-see-more">
             <p>Découvrez aussi nos autres projets de communication, de création graphique et de vidéo.</p>

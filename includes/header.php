@@ -18,5 +18,6 @@ if (!isset($pageTitle)) {
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/portfolio-refresh.css">
+    <link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/domain-hosting.css">
 </head>
 <body>
