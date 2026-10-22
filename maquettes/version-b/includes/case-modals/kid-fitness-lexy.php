@@ -3,7 +3,7 @@
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">
             <button type="button" data-close-modal>← Tous les projets</button>
-            <span>SB22 Agency · Portfolio</span>
+            <span>SB22 · Portfolio</span>
             <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
         </div>
         <header class="book-case-heading">
@@ -13,7 +13,7 @@
             <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" alt="Présentation du projet Kid Fitness Lexy" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Promouvoir les journées portes ouvertes et encourager les inscriptions.</p></div><div><span>Son objectif</span><p>Faire connaître les journées portes ouvertes de janvier 2026 et attirer de nouvelles familles.</p></div><div><span>Notre intervention</span><p>Conception d’une campagne publicitaire destinée à Facebook et Instagram, avec supports adaptés aux publications et stories.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Kid Fitness Lexy propose des activités sportives et ludiques destinées aux enfants et aux familles.</p></div><div><span>Son objectif</span><p>Faire connaître les journées portes ouvertes et présenter l’offre aux familles susceptibles d’être intéressées.</p></div><div><span>Notre intervention</span><p>Création d’un support graphique déclinable pour les publications et stories, ainsi que d’une vidéo promotionnelle liée à la campagne Meta Ads.</p></div></div></section>
         <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
         <div class="sb22-video-copy">
             <span>Les réalisations · en vidéo</span><h3>La vidéo publicitaire</h3>

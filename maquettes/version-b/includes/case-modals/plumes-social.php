@@ -3,7 +3,7 @@
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">
             <button type="button" data-close-modal>← Tous les projets</button>
-            <span>SB22 Agency · Portfolio</span>
+            <span>SB22 · Portfolio</span>
             <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
         </div>
         <header class="book-case-heading">
@@ -13,7 +13,7 @@
             <span class="book-case-category">Social Media Management</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg" alt="Présentation du projet Plumes de Cœur Éditions" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Faire connaître la maison d’édition et son univers sur les réseaux sociaux.</p></div><div><span>Son objectif</span><p>Développer la visibilité de Plumes de Cœur Éditions et valoriser son univers éditorial sur Facebook et Instagram.</p></div><div><span>Notre intervention</span><p>Conception de publications sociales et développement d’une communication graphique cohérente.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Plumes de Cœur Éditions est une maison d’édition qui valorise des auteurs, des ouvrages et une programmation culturelle.</p></div><div><span>Son objectif</span><p>Faire découvrir les livres, les auteurs et les actualités de la maison d’édition tout en construisant une présence reconnaissable sur les réseaux.</p></div><div><span>Notre intervention</span><p>Création de visuels et de publications éditoriales pour présenter les livres, les auteurs, les nouveautés et les événements.</p></div></div></section>
         <div class="book-case-media"><section class="book-case-section" aria-label="Réalisations graphiques">
         <h3>Les réalisations</h3>
         <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg" loading="lazy" alt="Publication sociale — actualité éditoriale"><figcaption>Publication sociale — actualité éditoriale</figcaption></figure>

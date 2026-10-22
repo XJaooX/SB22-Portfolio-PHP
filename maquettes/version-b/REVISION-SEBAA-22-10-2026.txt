@@ -1,0 +1,9 @@
+Version B — corrections du 22 octobre 2026
+Identité affichée : SB22, sauf les adresses et URL techniques existantes.
+Nom de la personne : Rym.
+Présentations client / objectif / prestation précisées dans les cinq dossiers.
+Atelier RESPIRA classé en création de contenus vidéo.
+Accueil : cinq projets, dont plusieurs productions vidéo.
+À propos : communication, relations publiques, stratégie digitale et création de contenus.
+Interview spécifique de Rym : aucun fichier identifié avec certitude. Ne pas attribuer par erreur la capsule d’interview existante à Rym sans confirmation.
+Maquette HTML et pages PHP actualisées. Site public non modifié.

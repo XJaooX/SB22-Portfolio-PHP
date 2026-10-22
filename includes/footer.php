@@ -8,10 +8,9 @@
             <!-- Logo, descrição e contactos -->
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="S’B 22 Agency">
+                    <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="SB22">
                     <div class="footer-brand-text">
                         <span class="footer-brand-name">S’B 22</span>
-                        <span class="footer-brand-subtitle">Agency</span>
                     </div>
                 </div>
 
@@ -57,7 +56,7 @@
 
         <!-- Parte inferior do footer -->
         <div class="footer-bottom">
-            <p>© <?php echo date('Y'); ?> S’B 22 Agency. Portfolio maquette.</p>
+            <p>© <?php echo date('Y'); ?> SB22. Portfolio maquette.</p>
 
             <div class="footer-legal">
                 <a href="#">Mentions légales</a>

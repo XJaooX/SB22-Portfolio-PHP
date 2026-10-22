@@ -1,7 +1,7 @@
 <?php
 $basePath = '../../';
 $currentPage = 'agence';
-$pageTitle = 'À propos — SB22 Agency';
+$pageTitle = 'À propos — SB22';
 $bodyClass = 'portfolio-inner-page';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
@@ -12,14 +12,14 @@ require __DIR__ . '/../../includes/navbar.php';
 <main class="book-compact-page">
     <p class="book-overline">À propos</p>
     <h1>Des idées, <em>des réalisations.</em></h1>
-    <p class="book-lead">SB22 Agency accompagne des entreprises et des projets dans leur communication, leur image et leur visibilité. Derrière chaque réalisation, il y a un besoin concret et une manière de le traduire en images.</p>
+    <p class="book-lead">SB22 accompagne les entreprises dans leur communication, leurs relations publiques, leur stratégie digitale et leur création de contenus. Nous construisons des messages et des supports adaptés à chaque projet, de la première idée jusqu’à sa diffusion.</p>
     <a class="book-inline-cta" href="../projets/projets.php">Voir les projets <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     <section class="sb22-about-story" aria-labelledby="sb22-about-title" data-reveal>
     <div class="sb22-about-copy">
         <p class="book-overline">L’AGENCE</p>
         <h2 id="sb22-about-title">Des échanges, puis des créations concrètes.</h2>
-        <p>Nous partons de l’activité du client et du message à transmettre. Selon le projet, cela prend la forme d’une publication, d’une affiche, d’une vidéo ou d’un support imprimé.</p>
-        <p>Ce portfolio rassemble ces différents formats pour montrer notre travail, au-delà d’une simple présentation de services.</p>
+        <p>Chaque projet commence par une écoute attentive : quels publics toucher, quel message transmettre et quels canaux utiliser ? Notre réponse peut prendre la forme d’une stratégie de communication, d’une action de relations publiques ou d’un contenu visuel.</p>
+        <p>Nos réalisations réunissent publications, identités graphiques, campagnes digitales, vidéos et interviews, avec un même objectif : donner une image claire et cohérente de chaque activité.</p>
         <a class="sb22-about-link" href="../projets/projets.php">Découvrir les réalisations <span aria-hidden="true">→</span></a>
     </div>
     <div class="sb22-about-images">
@@ -28,11 +28,11 @@ require __DIR__ . '/../../includes/navbar.php';
     </div>
 </section>
 <section class="sb22-about-process" aria-label="Notre façon de travailler" data-reveal>
-    <p class="book-overline">COMMENT NOUS TRAVAILLONS</p>
+    <p class="book-overline">NOS DOMAINES D’EXPERTISE</p>
     <div class="sb22-about-process-grid">
-        <article><span>01</span><h3>Comprendre</h3><p>Identifier le projet, le public et le message essentiel.</p></article>
-        <article><span>02</span><h3>Créer</h3><p>Concevoir des supports adaptés à chaque format.</p></article>
-        <article><span>03</span><h3>Montrer</h3><p>Mettre en avant le travail réalisé, sans discours inutile.</p></article>
+        <article><span>01</span><h3>Communication & relations publiques</h3><p>Définir le message, accompagner la prise de parole et développer la visibilité des projets.</p></article>
+        <article><span>02</span><h3>Stratégie digitale</h3><p>Déployer des contenus et des campagnes adaptés aux publics et aux plateformes.</p></article>
+        <article><span>03</span><h3>Création de contenus</h3><p>Imaginer et produire des visuels, des vidéos et des formats éditoriaux qui racontent un projet.</p></article>
     </div>
 </section>
     <p class="book-small">Relations publiques, communication 360°, marketing digital et création de contenu. <a href="../expertises/expertises.php">Domaines d’intervention <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>

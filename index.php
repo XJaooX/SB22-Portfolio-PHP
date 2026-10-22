@@ -6,7 +6,7 @@ $basePath = '';
 $currentPage = 'accueil';
 
 // Título usado no separador do navegador.
-$pageTitle = "S’B 22 Agency — Portfolio · Maquette";
+$pageTitle = "SB22 — Portfolio · Maquette";
 
 // Adiciona o início do HTML e a navbar.
 include 'includes/header.php';
@@ -31,7 +31,7 @@ include 'includes/navbar.php';
 
             <!-- Parte esquerda: texto principal -->
             <div class="hero-copy">
-                <span class="hero-kicker">S’B 22 Agency — Portfolio</span>
+                <span class="hero-kicker">SB22 — Portfolio</span>
 
                 <h1>
                     Chaque projet raconte

@@ -70,23 +70,26 @@ expected={
   "plumes-social":"social-media",
   "plumes-signaletique":"design-graphique",
   "kid-fitness-lexy":"meta-ads",
-  "youplaboom-meta":"meta-ads"
+  "youplaboom-meta":"meta-ads",
+  "atelier-respira":"production-video",
+  "interview-capsule":"production-video"
 }
-if dict(project.cards)!=expected:errors.append(("wrong five cards",project.cards))
-if set(project.filters)!={"tous","social-media","design-graphique","meta-ads"}:errors.append(("wrong filters",project.filters))
-if len(project.modals)!=5:errors.append(("wrong number of cases",len(project.modals)))
+if dict(project.cards)!=expected:errors.append(("wrong cards",project.cards))
+if set(project.filters)!={"tous","social-media","design-graphique","meta-ads","production-video"}:errors.append(("wrong filters",project.filters))
+if len(project.modals)!=len(expected):errors.append(("wrong number of cases",len(project.modals)))
 
 text=TARGET.read_text(encoding="utf-8")
 for slug in expected:
   section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
-  for marker in ('Le client','Son objectif','Notre intervention','Les réalisations'):
+  markers=('Le projet','Son objectif','Notre intervention','Les réalisations') if slug in ('atelier-respira','interview-capsule') else ('Le client','Son objectif','Notre intervention','Les réalisations')
+  for marker in markers:
     if marker not in section:errors.append((slug,"missing editorial",marker))
   if 'plumes-social'==slug:
     for physical in ("plumes-1.jpg","plumes-2.jpg","plumes-3.jpg","plumes-4.jpg"):
       if physical in section:errors.append((slug,"physical media leaked",physical))
   if 'plumes-signaletique'==slug and "plumes-social/" in section:
     errors.append((slug,"social media leaked"))
-for slug in ("kid-fitness-lexy","youplaboom-meta"):
+for slug in ("kid-fitness-lexy","youplaboom-meta","atelier-respira","interview-capsule"):
   section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
   if "<video controls" not in section:errors.append((slug,"video not embedded"))
 
@@ -94,6 +97,10 @@ homepage=(ROOT/"index.html").read_text(encoding="utf-8")
 if 'kuba-carousel-cover.jpg' not in homepage:errors.append(("home","black cover missing"))
 if 'sb22-home-domains' not in homepage:errors.append(("home","category navigation missing"))
 if len(live)!=6:errors.append(("unexpected live pages",len(live)))
+if homepage.count('class="pr-rail-card')!=5:errors.append(("home","expected five cards"))
+if "05 projets" not in homepage:errors.append(("home","counter not updated"))
+if "Rym / Atelier RESPIRA" not in text:errors.append(("rym","incorrect name"))
+if "SB22 Agency" in homepage or "SB22 Agency" in text:errors.append(("brand","incorrect public identity"))
 
 print("Páginas funcionais:",len(live),"Redirecionamentos antigos:",len(legacy))
 print("Referências verificadas:",counts["assets"],"Imagens:",counts["images"],"Vídeos:",counts["videos"],"Scripts:",counts["js"])

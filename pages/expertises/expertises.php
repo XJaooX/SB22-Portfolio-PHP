@@ -2,7 +2,7 @@
 // pagina expertises
 $basePath = '../../';
 $currentPage = 'expertises';
-$pageTitle = "Expertises — S’B 22 Agency";
+$pageTitle = "Expertises — SB22";
 
 // lista das expertises
 $expertises = [

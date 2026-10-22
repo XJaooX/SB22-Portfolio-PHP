@@ -2,7 +2,7 @@
 // pagina projets
 $basePath = '../../';
 $currentPage = 'projets';
-$pageTitle = "Projets — S’B 22 Agency";
+$pageTitle = "Projets — SB22";
 
 // projetos
 $projects = [

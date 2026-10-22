@@ -6,7 +6,7 @@ if (!isset($basePath)) {
 
 // Define o título da página. Se a página não definir um título próprio, usa o título principal.
 if (!isset($pageTitle)) {
-    $pageTitle = "S’B 22 Agency — Portfolio · Maquette";
+    $pageTitle = "SB22 — Portfolio · Maquette";
 }
 ?>
 <!DOCTYPE html>

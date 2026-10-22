@@ -1,23 +1,22 @@
 <?php
-return [
+$cases = [
     ['id' => 'kuba-home','domain' => 'social-media','sector' => '01 / Aménagement intérieur','name' => 'Kuba Home','description' => 'Une vitrine digitale premium pour les créations de Kuba Home.','image' => 'assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg'],
     ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Faire connaître la maison d’édition et son univers sur les réseaux sociaux.','image' => 'assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg'],
     ['id' => 'plumes-signaletique','domain' => 'design-graphique','sector' => '03 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Une identité éditoriale visible aussi dans l’espace physique.','image' => 'assets/images/projects/plumes-de-coeur/plumes-2.jpg'],
     ['id' => 'kid-fitness-lexy','domain' => 'meta-ads','sector' => '04 / Activités pour enfants','name' => 'Kid Fitness Lexy','description' => 'Promouvoir les journées portes ouvertes et encourager les inscriptions.','image' => 'assets/images/projects/kid-fitness/kid-fitness-poster.jpg'],
     ['id' => 'youplaboom-meta','domain' => 'meta-ads','sector' => '05 / Petite enfance','name' => 'Youplaboom','description' => 'Développer la visibilité locale de la microcrèche.','image' => 'assets/images/projects/youplaboom/youplaboom-meta-cover.jpg'],
 
-    // Nouveau dossier social media : deux vidéos de création de contenu autour de l'atelier.
     [
         'id' => 'atelier-respira',
-        'domain' => 'social-media',
+        'domain' => 'production-video',
         'sector' => '06 / Bien-être & ateliers',
         'name' => 'Atelier RESPIRA',
-        'description' => 'Deux contenus vidéo pour faire découvrir l’ambiance de l’atelier sur les réseaux sociaux.',
+        'description' => 'Deux vidéos originales pour présenter l’expérience et les temps forts de l’Atelier RESPIRA.',
         'image' => 'assets/images/projects/respira/respira-brand-cover.png',
         'context' => 'Un atelier bien-être présenté à travers deux vidéos destinées aux réseaux sociaux.',
         'objective' => 'Partager l’atmosphère de l’atelier et mettre en avant ses moments forts.',
-        'intervention' => 'Création de contenu vidéo pour le Social Media Management : une immersion dans l’atelier et un format court.',
-        'overline' => 'Rim Rim / Atelier RESPIRA',
+        'intervention' => 'Conception et réalisation de deux contenus vidéo : une présentation de l’événement et un montage court adapté aux réseaux sociaux.',
+        'overline' => 'Rym / Atelier RESPIRA',
         'videos' => [
             [
                 'src' => 'assets/videos/respira/respira-evenement.mp4',
@@ -33,7 +32,6 @@ return [
             ]
         ]
     ],
-    // Format distinct de l'atelier RESPIRA : capsule d'interview confidentielle.
     [
         'id' => 'interview-capsule',
         'domain' => 'production-video',
@@ -55,3 +53,20 @@ return [
         ]
     ]
 ];
+
+$rymInterview = __DIR__ . '/../assets/videos/respira/rym-interview.mp4';
+if (is_file($rymInterview)) {
+    foreach ($cases as &$case) {
+        if ($case['id'] === 'atelier-respira') {
+            $case['videos'][] = [
+                'src' => 'assets/videos/respira/rym-interview.mp4',
+                'title' => 'Interview de Rym',
+                'caption' => 'La parole à Rym.',
+                'poster' => 'assets/images/projects/respira/respira-brand-cover.png'
+            ];
+            break;
+        }
+    }
+    unset($case);
+}
+return $cases;

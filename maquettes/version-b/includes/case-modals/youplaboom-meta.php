@@ -3,7 +3,7 @@
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">
             <button type="button" data-close-modal>← Tous les projets</button>
-            <span>SB22 Agency · Portfolio</span>
+            <span>SB22 · Portfolio</span>
             <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
         </div>
         <header class="book-case-heading">
@@ -13,7 +13,7 @@
             <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" alt="Présentation du projet Youplaboom" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Développer la visibilité locale de la microcrèche.</p></div><div><span>Son objectif</span><p>Faire connaître la microcrèche auprès des familles et encourager les demandes d’inscription.</p></div><div><span>Notre intervention</span><p>Création d’une vidéo promotionnelle pour une campagne Meta Ads diffusée sur Facebook et Instagram.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Youplaboom est une structure d’accueil dédiée à la petite enfance qui s’adresse aux familles de son secteur.</p></div><div><span>Son objectif</span><p>Présenter la microcrèche et son environnement aux parents afin de susciter des prises de contact et des demandes d’information.</p></div><div><span>Notre intervention</span><p>Création d’une vidéo promotionnelle au format vertical pour une campagne Meta Ads sur Facebook et Instagram.</p></div></div></section>
         <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
         <div class="sb22-video-copy">
             <span>Les réalisations · en vidéo</span><h3>La campagne vidéo Meta Ads</h3>

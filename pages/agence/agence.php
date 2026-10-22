@@ -6,7 +6,7 @@ $basePath = '../../';
 $currentPage = 'agence';
 
 // Título mostrado no separador do navegador.
-$pageTitle = "L’agence — S’B 22 Agency";
+$pageTitle = "L’agence — SB22";
 
 // Valores da agência.
 // Guardamos os textos num array para depois os mostrar com um foreach.

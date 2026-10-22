@@ -2,7 +2,7 @@
 // pagina contact
 $basePath = '../../';
 $currentPage = 'contact';
-$pageTitle = "Contact — S’B 22 Agency";
+$pageTitle = "Contact — SB22";
 
 include '../../includes/header.php';
 include '../../includes/navbar.php';
@@ -46,7 +46,7 @@ include '../../includes/navbar.php';
             </div>
 
             <div class="contact-bottom-text">
-                <strong>S’B 22 Agency</strong>
+                <strong>SB22</strong>
                 <p>Relations publiques • Communication 360° • Marketing digital • Création de contenu • Bien-être en entreprise</p>
             </div>
         </div>
