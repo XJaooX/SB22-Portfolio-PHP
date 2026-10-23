@@ -40,15 +40,13 @@
 </section>
 <section class="book-case-section sb22-case-carousel" aria-label="Carrousel · Kuba Home" data-sb22-carousel>
 <div class="sb22-case-carousel-heading"><div><p class="sb22-carousel-overline">Sélection de créations</p><h3>Carrousel · Kuba Home</h3></div>
-<div class="sb22-case-carousel-actions"><span class="sb22-carousel-count" aria-live="polite"><span data-sb22-current>01</span> / 07</span><button type="button" data-sb22-prev aria-label="Image précédente">←</button><button type="button" data-sb22-next aria-label="Image suivante">→</button></div></div>
+<div class="sb22-case-carousel-actions"><span class="sb22-carousel-count" aria-live="polite"><span data-sb22-current>01</span> / 05</span><button type="button" data-sb22-prev aria-label="Image précédente">←</button><button type="button" data-sb22-next aria-label="Image suivante">→</button></div></div>
 <div class="sb22-carousel-viewport" tabindex="0" aria-label="Carrousel Carrousel · Kuba Home"><div class="sb22-carousel-track">
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-01.jpg" alt="Kuba Home · présentation de la marque" loading="lazy" decoding="async"><figcaption>Kuba Home · présentation de la marque</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-02.jpg" alt="Kuba Home · aménagement intérieur" loading="lazy" decoding="async"><figcaption>Kuba Home · aménagement intérieur</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-03.jpg" alt="Kuba Home · savoir-faire" loading="lazy" decoding="async"><figcaption>Kuba Home · savoir-faire</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-01.jpg" alt="Kuba Home · création pour Instagram" loading="lazy" decoding="async"><figcaption>Kuba Home · création pour Instagram</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-02.jpg" alt="Kuba Home · publication Instagram" loading="lazy" decoding="async"><figcaption>Kuba Home · publication Instagram</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-03.jpg" alt="Kuba Home · présentation de projet" loading="lazy" decoding="async"><figcaption>Kuba Home · présentation de projet</figcaption></figure>
-<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-04.jpg" alt="Kuba Home · communication de marque" loading="lazy" decoding="async"><figcaption>Kuba Home · communication de marque</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/whatsapp-20261023/carrousel-01.jpg" alt="Kuba Home · présentation de la marque" loading="lazy" decoding="async"><figcaption>Kuba Home · présentation de la marque</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/whatsapp-20261023/carrousel-02.jpg" alt="Kuba Home · le sur-mesure dans chaque détail" loading="lazy" decoding="async"><figcaption>Kuba Home · le sur-mesure dans chaque détail</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/whatsapp-20261023/carrousel-03.jpg" alt="Kuba Home · savoir-faire et réalisation" loading="lazy" decoding="async"><figcaption>Kuba Home · savoir-faire et réalisation</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/whatsapp-20261023/carrousel-04.jpg" alt="Kuba Home · design et savoir-faire" loading="lazy" decoding="async"><figcaption>Kuba Home · design et savoir-faire</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/whatsapp-20261023/carrousel-05.jpg" alt="Kuba Home · imaginez votre espace idéal" loading="lazy" decoding="async"><figcaption>Kuba Home · imaginez votre espace idéal</figcaption></figure>
 </div></div>
 </section>
 </div>

@@ -72,7 +72,8 @@ expected={
   "kid-fitness-lexy":"meta-ads",
   "youplaboom-meta":"meta-ads",
   "atelier-respira":"production-video",
-  "interview-capsule":"production-video"
+  "interview-capsule":"production-video",
+  "ailes-du-livre-longwy":"production-video"
 }
 if dict(project.cards)!=expected:errors.append(("wrong cards",project.cards))
 if set(project.filters)!={"tous","social-media","design-graphique","meta-ads","production-video"}:errors.append(("wrong filters",project.filters))
@@ -81,7 +82,7 @@ if len(project.modals)!=len(expected):errors.append(("wrong number of cases",len
 text=TARGET.read_text(encoding="utf-8")
 for slug in expected:
   section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
-  markers=('Le projet','Son objectif','Notre intervention','Les réalisations') if slug in ('atelier-respira','interview-capsule') else ('Le client','Son objectif','Notre intervention','Les réalisations')
+  markers=('Le projet','Son objectif','Notre intervention','Les réalisations') if slug in ('atelier-respira','interview-capsule','ailes-du-livre-longwy') else ('Le client','Son objectif','Notre intervention','Les réalisations')
   for marker in markers:
     if marker=="Les réalisations" and slug in ("kuba-home","plumes-social"):
       if "sb22-case-carousel" not in section: errors.append((slug,"carousel missing"))
@@ -91,7 +92,7 @@ for slug in expected:
       if physical in section:errors.append((slug,"physical media leaked",physical))
   if 'plumes-signaletique'==slug and "plumes-social/" in section:
     errors.append((slug,"social media leaked"))
-for slug in ("kid-fitness-lexy","youplaboom-meta","atelier-respira","interview-capsule"):
+for slug in ("kid-fitness-lexy","youplaboom-meta","atelier-respira","interview-capsule","ailes-du-livre-longwy"):
   section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
   if "<video controls" not in section:errors.append((slug,"video not embedded"))
 
@@ -112,6 +113,11 @@ if 'sb22-instagram-panel' in kuba_modal:errors.append(("kuba","old static mock s
 if 'sb22-carousels.js' not in text or 'sb22-carousels.css' not in text: errors.append(("carousels","assets missing"))
 if "SB22 AGENCY" in (ROOT/"pages/contact/merci.html").read_text(encoding="utf-8"):
   errors.append(("brand","legacy footer text"))
+for original in (ROOT/"assets/images/projects/plumes-de-coeur/whatsapp-20261023").glob("*.jpg"):
+  if str(original.relative_to(ROOT)) not in text: errors.append(("plumes-whatsapp","missing original",original.name))
+for original in (ROOT/"assets/images/projects/kuba/whatsapp-20261023").glob("*.jpg"):
+  if str(original.relative_to(ROOT)) not in text: errors.append(("kuba-whatsapp","missing original",original.name))
+if "ailes-longwy-promo-20261023.mp4" not in text: errors.append(("longwy","missing video"))
 if "05 projets" not in homepage:errors.append(("home","counter not updated"))
 if "Rym / Atelier RESPIRA" not in text:errors.append(("rym","incorrect name"))
 if "SB22 Agency" in homepage or "SB22 Agency" in text:errors.append(("brand","incorrect public identity"))

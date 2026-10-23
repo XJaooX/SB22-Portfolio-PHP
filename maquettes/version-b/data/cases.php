@@ -1,7 +1,7 @@
 <?php
 $cases = [
     ['id' => 'kuba-home','domain' => 'social-media','sector' => '01 / Aménagement intérieur','name' => 'Kuba Home','description' => 'Une vitrine digitale premium pour les créations de Kuba Home.','image' => 'assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg'],
-    ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Faire connaître la maison d’édition et son univers sur les réseaux sociaux.','image' => 'assets/images/projects/plumes-de-coeur/plumes-social/festival-yann-thomas.jpg'],
+    ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Faire connaître la maison d’édition et son univers sur les réseaux sociaux.','image' => 'assets/images/projects/plumes-de-coeur/whatsapp-20261023/presentation-01.jpg'],
     ['id' => 'plumes-signaletique','domain' => 'design-graphique','sector' => '03 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Une identité éditoriale visible aussi dans l’espace physique.','image' => 'assets/images/projects/plumes-de-coeur/plumes-2.jpg'],
     ['id' => 'kid-fitness-lexy','domain' => 'meta-ads','sector' => '04 / Activités pour enfants','name' => 'Kid Fitness Lexy','description' => 'Promouvoir les journées portes ouvertes et encourager les inscriptions.','image' => 'assets/images/projects/kid-fitness/kid-fitness-poster.jpg'],
     ['id' => 'youplaboom-meta','domain' => 'meta-ads','sector' => '05 / Petite enfance','name' => 'Youplaboom','description' => 'Développer la visibilité locale de la microcrèche.','image' => 'assets/images/projects/youplaboom/youplaboom-meta-cover.jpg'],
@@ -51,7 +51,28 @@ $cases = [
                 'poster' => 'assets/images/projects/interview-capsule/interview-cover-sb22.png'
             ]
         ]
-    ]
+    ],
+
+    [
+        'id' => 'ailes-du-livre-longwy',
+        'domain' => 'production-video',
+        'sector' => '08 / Culture & événementiel',
+        'name' => 'Les Ailes du Livre · Longwy',
+        'description' => 'Une vidéo courte pour faire découvrir le salon littéraire de Longwy et ses participants.',
+        'image' => 'assets/images/projects/ailes-du-livre/ailes-longwy-cover-20261023.jpg',
+        'context' => 'Un événement à Longwy qui réunit lecteurs, auteurs et passionnés de littérature.',
+        'objective' => 'Présenter le salon et partager son ambiance dans un format court destiné aux réseaux sociaux.',
+        'intervention' => 'Réalisation d’une vidéo verticale de présentation et de promotion de l’événement.',
+        'overline' => 'Les Ailes du Livre / Longwy · Création vidéo',
+        'videos' => [
+            [
+                'src' => 'assets/videos/ailes-du-livre/ailes-longwy-promo-20261023.mp4',
+                'title' => 'Les Ailes du Livre · Longwy en vidéo',
+                'caption' => 'Rencontres, auteurs et ambiance du salon littéraire en 19 secondes.',
+                'poster' => 'assets/images/projects/ailes-du-livre/ailes-longwy-cover-20261023.jpg'
+            ]
+        ]
+    ],
 ];
 
 $rymInterview = __DIR__ . '/../assets/videos/respira/rym-interview.mp4';
