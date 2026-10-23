@@ -1,0 +1,88 @@
+/* Carrosséis e apresentação do Instagram dos projetos.
+   Mantém o layout existente e funciona com rato, toque e teclado. */
+.portfolio-gallery-page .sb22-enhanced-gallery { max-width:1180px; margin-inline:auto; min-width:0; }
+.portfolio-gallery-page .sb22-case-carousel { min-width:0; margin:12px 0 52px; }
+.portfolio-gallery-page .sb22-case-carousel-heading { display:flex; justify-content:space-between; align-items:end; gap:22px; margin:0 0 17px; }
+.portfolio-gallery-page .sb22-carousel-overline { margin:0; color:#61718c; text-transform:uppercase; font-weight:700; letter-spacing:.12em; font-size:10px; }
+.portfolio-gallery-page .sb22-case-carousel-heading h3 { margin:6px 0 0!important; font-size:clamp(23px,3vw,38px)!important; line-height:1.16; }
+.portfolio-gallery-page .sb22-case-carousel-actions { display:flex; align-items:center; gap:9px; flex-shrink:0; }
+.portfolio-gallery-page .sb22-carousel-count { display:inline-block; min-width:58px; text-align:center; font-size:12px; color:#4a5b73; font-variant-numeric:tabular-nums; }
+.portfolio-gallery-page .sb22-case-carousel-actions button { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border:1px solid #b8c3d4; background:#fff; color:#10243f; font-size:21px; cursor:pointer; transition:background .2s,border-color .2s; }
+.portfolio-gallery-page .sb22-case-carousel-actions button:hover { background:#e9eef7; border-color:#657a9b; }
+.portfolio-gallery-page .sb22-case-carousel-actions button:focus-visible,
+.portfolio-gallery-page .sb22-carousel-viewport:focus-visible { outline:2px solid #3869b4; outline-offset:3px; }
+.portfolio-gallery-page .sb22-carousel-viewport { width:100%; max-width:100%; overflow-x:auto; overflow-y:hidden; overscroll-behavior-inline:contain; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#b9c4d5 transparent; padding:2px 0 12px; }
+.portfolio-gallery-page .sb22-carousel-track { display:flex; gap:16px; }
+.portfolio-gallery-page .sb22-carousel-slide { display:flex; flex-direction:column; flex:0 0 clamp(280px,68%,620px); min-width:0; padding:0; margin:0; scroll-snap-align:start; background:#eff3f8; border:1px solid #dce4ee; }
+.portfolio-gallery-page .sb22-carousel-slide img { display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:contain; background:#f5f7fb; }
+.portfolio-gallery-page .sb22-carousel-slide figcaption { margin:0; padding:11px 15px; color:#4c5c75; background:#fff; font-size:12px; line-height:1.5; }
+@media(max-width:760px){
+ .portfolio-gallery-page .sb22-case-carousel-heading { align-items:start; gap:9px; }
+ .portfolio-gallery-page .sb22-case-carousel-actions { gap:4px; }
+ .portfolio-gallery-page .sb22-case-carousel-actions button { width:36px; height:36px; }
+ .portfolio-gallery-page .sb22-carousel-count { min-width:48px; font-size:11px; }
+ .portfolio-gallery-page .sb22-carousel-slide { flex-basis:86%; }
+ .portfolio-gallery-page .sb22-carousel-track { gap:11px; }
+}
+@media(prefers-reduced-motion:reduce){
+ .portfolio-gallery-page .sb22-carousel-viewport { scroll-behavior:auto; }
+ .portfolio-gallery-page .sb22-case-carousel-actions button { transition:none; }
+}
+
+/* Instagram officiel : vraie intégration du profil, pas une capture d’écran. */
+.portfolio-gallery-page .sb22-instagram-embed-panel {
+  margin:0 0 52px;
+  background:#fff;
+  border:1px solid #dce4ef;
+  min-width:0;
+}
+.portfolio-gallery-page .sb22-instagram-embed-heading { padding:24px clamp(16px,3.5vw,35px) 16px; }
+.portfolio-gallery-page .sb22-instagram-embed-heading h3 {
+  margin:7px 0 8px!important;
+  font-size:clamp(26px,3vw,40px)!important;
+  line-height:1.12;
+}
+.portfolio-gallery-page .sb22-instagram-embed-heading p:last-child {
+  color:#4c5e79;
+  font-size:13px;
+  line-height:1.75;
+  margin:0;
+}
+.portfolio-gallery-page .sb22-instagram-live-container {
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+  background:#fff;
+}
+.portfolio-gallery-page .sb22-instagram-live-container iframe {
+  display:block;
+  box-sizing:border-box;
+  border:0;
+  width:100%;
+  height:795px;
+  background:#fff;
+}
+.portfolio-gallery-page .sb22-instagram-embed-footer {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:15px clamp(16px,3.5vw,35px);
+  border-top:1px solid #e1e7f0;
+  color:#53637a;
+  font-size:12px;
+}
+.portfolio-gallery-page .sb22-instagram-embed-footer a {
+  background:#071a36;
+  color:#fff;
+  padding:12px 17px;
+  text-decoration:none;
+  font-weight:700;
+  white-space:nowrap;
+}
+.portfolio-gallery-page .sb22-instagram-embed-footer a:hover { background:#234877; color:#fff; }
+@media(max-width:760px) {
+  .portfolio-gallery-page .sb22-instagram-live-container iframe { height:690px; }
+  .portfolio-gallery-page .sb22-instagram-embed-footer { flex-direction:column; align-items:stretch; }
+  .portfolio-gallery-page .sb22-instagram-embed-footer a { display:block; width:100%; box-sizing:border-box; text-align:center; }
+}

@@ -3,7 +3,7 @@
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">
             <button type="button" data-close-modal>← Tous les projets</button>
-            <span>SB22 · Portfolio</span>
+            <span>S’B 22 · Portfolio</span>
             <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
         </div>
         <header class="book-case-heading">

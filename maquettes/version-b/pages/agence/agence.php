@@ -1,7 +1,7 @@
 <?php
 $basePath = '../../';
 $currentPage = 'agence';
-$pageTitle = 'À propos — SB22';
+$pageTitle = 'À propos — S’B 22';
 $bodyClass = 'portfolio-inner-page';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
@@ -12,7 +12,7 @@ require __DIR__ . '/../../includes/navbar.php';
 <main class="book-compact-page">
     <p class="book-overline">À propos</p>
     <h1>Des idées, <em>des réalisations.</em></h1>
-    <p class="book-lead">SB22 accompagne les entreprises dans leur communication, leurs relations publiques, leur stratégie digitale et leur création de contenus. Nous construisons des messages et des supports adaptés à chaque projet, de la première idée jusqu’à sa diffusion.</p>
+    <p class="book-lead">S’B 22 accompagne les entreprises dans leur communication, leurs relations publiques, leur stratégie digitale et leur création de contenus. Nous construisons des messages et des supports adaptés à chaque projet, de la première idée jusqu’à sa diffusion.</p>
     <a class="book-inline-cta" href="../projets/projets.php">Voir les projets <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     <section class="sb22-about-story" aria-labelledby="sb22-about-title" data-reveal>
     <div class="sb22-about-copy">

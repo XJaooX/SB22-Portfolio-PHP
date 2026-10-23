@@ -3,7 +3,7 @@
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">
             <button type="button" data-close-modal>← Tous les projets</button>
-            <span>SB22 · Portfolio</span>
+            <span>S’B 22 · Portfolio</span>
             <button class="modal-x" type="button" data-close-modal aria-label="Fermer la fiche">×</button>
         </div>
         <header class="book-case-heading">
@@ -14,15 +14,45 @@
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="Présentation du projet Kuba Home" loading="lazy"></figure>
         <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Kuba Home présente des projets d’aménagement intérieur, notamment des cuisines, salles de bains et dressings.</p></div><div><span>Son objectif</span><p>Mettre en valeur les réalisations et le savoir-faire de l’enseigne auprès d’une clientèle sensible au design et à la qualité des aménagements.</p></div><div><span>Notre intervention</span><p>Conception de la ligne éditoriale, création de publications visuelles et préparation de contenus adaptés à Instagram et Facebook.</p></div></div></section>
-        <div class="book-case-media"><section class="book-case-section" aria-label="Réalisations graphiques">
-        <h3>Les réalisations</h3>
-        <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-02.jpg" loading="lazy" alt="Publication Instagram — visuel de réalisation"><figcaption>Publication Instagram — visuel de réalisation</figcaption></figure>
-<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-03.jpg" loading="lazy" alt="Publication Instagram — communication de marque"><figcaption>Publication Instagram — communication de marque</figcaption></figure>
-<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-01.jpg" loading="lazy" alt="Publication Instagram — création graphique"><figcaption>Publication Instagram — création graphique</figcaption></figure>
-<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-before-after.jpg" loading="lazy" alt="Contenu comparatif avant / après"><figcaption>Contenu comparatif avant / après</figcaption></figure>
-<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-01.jpg" loading="lazy" alt="Déclinaison graphique pour les réseaux sociaux"><figcaption>Déclinaison graphique pour les réseaux sociaux</figcaption></figure>
-<figure class="book-case-figure"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-04.jpg" loading="lazy" alt="Autre publication de la série"><figcaption>Autre publication de la série</figcaption></figure></div>
-        </section></div>
+        <div class="book-case-media sb22-enhanced-gallery">
+<section class="sb22-instagram-embed-panel" aria-label="Instagram officiel de Kuba Home">
+  <div class="sb22-instagram-embed-heading">
+    <div>
+      <p class="sb22-carousel-overline">Réseaux sociaux · Kuba Home</p>
+      <h3>Instagram Kuba Home</h3>
+      <p>Découvrez directement le profil et les publications de Kuba Home.</p>
+    </div>
+  </div>
+  <div class="sb22-instagram-live-container">
+    <iframe
+      title="Profil Instagram officiel de Kuba Home — @kubahome_officiel"
+      src="https://www.instagram.com/kubahome_officiel/embed/"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      scrolling="yes"
+      allow="encrypted-media"
+    ></iframe>
+  </div>
+  <div class="sb22-instagram-embed-footer">
+    <span>Profil officiel · @kubahome_officiel</span>
+    <a href="https://www.instagram.com/kubahome_officiel/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+<section class="book-case-section sb22-case-carousel" aria-label="Carrousel · Kuba Home" data-sb22-carousel>
+<div class="sb22-case-carousel-heading"><div><p class="sb22-carousel-overline">Sélection de créations</p><h3>Carrousel · Kuba Home</h3></div>
+<div class="sb22-case-carousel-actions"><span class="sb22-carousel-count" aria-live="polite"><span data-sb22-current>01</span> / 07</span><button type="button" data-sb22-prev aria-label="Image précédente">←</button><button type="button" data-sb22-next aria-label="Image suivante">→</button></div></div>
+<div class="sb22-carousel-viewport" tabindex="0" aria-label="Carrousel Carrousel · Kuba Home"><div class="sb22-carousel-track">
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-01.jpg" alt="Kuba Home · présentation de la marque" loading="lazy" decoding="async"><figcaption>Kuba Home · présentation de la marque</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-02.jpg" alt="Kuba Home · aménagement intérieur" loading="lazy" decoding="async"><figcaption>Kuba Home · aménagement intérieur</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-whatsapp-03.jpg" alt="Kuba Home · savoir-faire" loading="lazy" decoding="async"><figcaption>Kuba Home · savoir-faire</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-01.jpg" alt="Kuba Home · création pour Instagram" loading="lazy" decoding="async"><figcaption>Kuba Home · création pour Instagram</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-02.jpg" alt="Kuba Home · publication Instagram" loading="lazy" decoding="async"><figcaption>Kuba Home · publication Instagram</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-03.jpg" alt="Kuba Home · présentation de projet" loading="lazy" decoding="async"><figcaption>Kuba Home · présentation de projet</figcaption></figure>
+<figure class="sb22-carousel-slide"><img src="../../assets/images/projects/kuba/kuba-instagram/kuba-instagram-04.jpg" alt="Kuba Home · communication de marque" loading="lazy" decoding="async"><figcaption>Kuba Home · communication de marque</figcaption></figure>
+</div></div>
+</section>
+</div>
+
         <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
             <button type="button" data-open-project="youplaboom-meta">← Projet précédent</button>
             <button type="button" data-open-project="plumes-social">Projet suivant →</button>

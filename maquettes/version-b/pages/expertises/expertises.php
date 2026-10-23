@@ -1,7 +1,7 @@
 <?php
 $basePath = '../../';
 $currentPage = 'expertises';
-$pageTitle = 'Domaines d’intervention — SB22';
+$pageTitle = 'Domaines d’intervention — S’B 22';
 $bodyClass = 'portfolio-inner-page';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
@@ -10,7 +10,7 @@ require __DIR__ . '/../../includes/navbar.php';
 ?>
 <div id="top"></div>
 <main class="book-compact-page">
-    <p class="book-overline">SB22</p>
+    <p class="book-overline">S’B 22</p>
     <h1>Domaines <em>d’intervention.</em></h1>
     <p class="book-lead">Quelques compétences mobilisées dans les projets présentés. Pour apprécier le travail, découvrez avant tout les réalisations.</p>
     <div class="book-expertise-list">

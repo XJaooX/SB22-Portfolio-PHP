@@ -35,21 +35,38 @@
     }
 }
 
-/* Une carte avec portrait pour l’interview capsule, même système que les autres projets. */
+/* Interview Capsule : identité S’B 22, bleu nuit et bleu glacier.
+   Règles limitées à ce projet pour préserver les autres couvertures. */
 .sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals {
-    background: #e5d5c2;
+    background: #e6edf7;
 }
 .sb22-domain-page .sb22-domain-card[data-project="interview-capsule"] .kg-card-visuals img {
     object-fit: contain;
     object-position: center;
-    background: #e5d5c2;
+    background: #e6edf7;
 }
-.sb22-domain-page #project-interview-capsule .book-case-cover {
-    background: #e5d5c2;
+.portfolio-gallery-page .sb22-domain-page #project-interview-capsule .book-case-cover {
+    height: min(78vh, 840px);
+    background: #e6edf7;
 }
-.sb22-domain-page #project-interview-capsule .book-case-cover img {
-    max-height: 480px;
+.portfolio-gallery-page .sb22-domain-page #project-interview-capsule .book-case-cover img {
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    padding: clamp(12px, 2vw, 27px);
     object-fit: contain;
+    background: transparent;
+}
+@media (max-width: 760px) {
+    .portfolio-gallery-page .sb22-domain-page #project-interview-capsule .book-case-cover {
+        height: auto;
+        min-height: 0;
+    }
+    .portfolio-gallery-page .sb22-domain-page #project-interview-capsule .book-case-cover img {
+        height: auto;
+        max-height: none;
+        padding: 12px;
+    }
 }
 .sb22-domain-page #project-interview-capsule .sb22-video-container video {
     max-height: 640px;

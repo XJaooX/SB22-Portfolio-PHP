@@ -1,10 +1,10 @@
 <?php
 $basePath = '../../';
 $currentPage = 'projets';
-$pageTitle = 'Réalisations — SB22';
+$pageTitle = 'Réalisations — S’B 22';
 $bodyClass = 'portfolio-gallery-page';
-$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css','feedback-domains.css','respira-project.css'];
-$scripts = ['main.js','feedback-final.js','feedback-wow.js','feedback-domains.js'];
+$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css','feedback-domains.css','respira-project.css','sb22-carousels.css'];
+$scripts = ['main.js','feedback-final.js','feedback-wow.js','feedback-domains.js','sb22-carousels.js'];
 $cases = require __DIR__ . '/../../data/cases.php';
 $domains = require __DIR__ . '/../../data/domains.php';
 require __DIR__ . '/../../includes/header.php';
@@ -15,7 +15,7 @@ require __DIR__ . '/../../includes/navbar.php';
     <div class="kg-shell">
         <aside class="kg-filters" aria-label="Navigation par domaine d’expertise">
             <div class="kg-filter-inner">
-                <p class="kg-sidebar-overline">SB22 · Portfolio</p>
+                <p class="kg-sidebar-overline">S’B 22 · Portfolio</p>
                 <h1>Nos<br>projets<span>.</span></h1>
                 <p class="sb22-domain-aside-intro">Découvrez nos réalisations par domaine d’expertise.</p>
                 <div class="kg-filter-group">
@@ -37,7 +37,7 @@ require __DIR__ . '/../../includes/navbar.php';
         <section class="kg-work" aria-label="Galerie des réalisations">
             <div class="kg-work-heading">
                 <div>
-                    <span class="kg-eyebrow">SB22 / Réalisations</span>
+                    <span class="kg-eyebrow">S’B 22 / Réalisations</span>
                     <h2 class="sb22-domain-heading" id="domain-heading">Des projets concrets, des identités singulières.</h2>
                     <p id="domain-description"><?php echo htmlspecialchars($domains['tous']['description'], ENT_QUOTES, 'UTF-8'); ?></p>
                 </div>

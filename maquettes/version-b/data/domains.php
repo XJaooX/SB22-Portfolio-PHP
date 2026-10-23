@@ -3,7 +3,7 @@ return [
     'tous' => [
         'label' => 'Toutes les réalisations',
         'title' => 'Des projets concrets, des identités singulières.',
-        'description' => 'Publications, identité visuelle, campagnes Meta Ads et interviews : les réalisations SB22.'
+        'description' => 'Publications, identité visuelle, campagnes Meta Ads et interviews : les réalisations S’B 22.'
     ],
     'social-media' => [
         'label' => 'Social Media Management',

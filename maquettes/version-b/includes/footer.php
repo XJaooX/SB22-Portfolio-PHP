@@ -9,7 +9,7 @@
                 <div class="footer-logo">
                     <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="SB22">
                     <div class="footer-brand-text">
-                        <span class="footer-brand-name">SB22</span>
+                        <span class="footer-brand-name">S’B 22</span>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                 </a>
 
                 <a href="https://www.facebook.com/people/SB-22/61580109419316/" target="_blank" rel="noopener noreferrer">
-                    Facebook SB22 <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                    Facebook S’B 22 <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
                 </a>
 
                 <a class="official-site" href="https://www.sb22agency.com" target="_blank" rel="noreferrer">
@@ -54,7 +54,7 @@
 
 
         <div class="footer-bottom">
-            <p>© <?php echo date("Y"); ?> SB22. Portfolio.</p>
+            <p>© <?php echo date("Y"); ?> S’B 22. Portfolio.</p>
 
 
         </div>

@@ -1,7 +1,7 @@
 <?php
 $cases = [
     ['id' => 'kuba-home','domain' => 'social-media','sector' => '01 / Aménagement intérieur','name' => 'Kuba Home','description' => 'Une vitrine digitale premium pour les créations de Kuba Home.','image' => 'assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg'],
-    ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Faire connaître la maison d’édition et son univers sur les réseaux sociaux.','image' => 'assets/images/projects/plumes-de-coeur/plumes-social/sortie-polar.jpg'],
+    ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Faire connaître la maison d’édition et son univers sur les réseaux sociaux.','image' => 'assets/images/projects/plumes-de-coeur/plumes-social/festival-yann-thomas.jpg'],
     ['id' => 'plumes-signaletique','domain' => 'design-graphique','sector' => '03 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Une identité éditoriale visible aussi dans l’espace physique.','image' => 'assets/images/projects/plumes-de-coeur/plumes-2.jpg'],
     ['id' => 'kid-fitness-lexy','domain' => 'meta-ads','sector' => '04 / Activités pour enfants','name' => 'Kid Fitness Lexy','description' => 'Promouvoir les journées portes ouvertes et encourager les inscriptions.','image' => 'assets/images/projects/kid-fitness/kid-fitness-poster.jpg'],
     ['id' => 'youplaboom-meta','domain' => 'meta-ads','sector' => '05 / Petite enfance','name' => 'Youplaboom','description' => 'Développer la visibilité locale de la microcrèche.','image' => 'assets/images/projects/youplaboom/youplaboom-meta-cover.jpg'],
@@ -38,7 +38,7 @@ $cases = [
         'sector' => '07 / Interview & création vidéo',
         'name' => 'Interview Capsule',
         'description' => 'Un format d’interview intime qui laisse place aux confidences.',
-        'image' => 'assets/images/projects/interview-capsule/interview-cover.png',
+        'image' => 'assets/images/projects/interview-capsule/interview-cover-sb22.png',
         'context' => 'Une capsule vidéo pensée pour donner la parole aux invités, loin du format journalistique classique.',
         'objective' => 'Créer un espace de parole sincère, où les invités peuvent partager leur vécu et leurs émotions.',
         'intervention' => 'Présentation d’une interview capsule qui privilégie le récit personnel, sans montrer les questions posées.',
@@ -48,7 +48,7 @@ $cases = [
                 'src' => 'assets/videos/interview-capsule/interview-capsule.mp4',
                 'title' => 'L’interview capsule',
                 'caption' => 'Une parole libre et personnelle, au cœur du format.',
-                'poster' => 'assets/images/projects/interview-capsule/interview-cover.png'
+                'poster' => 'assets/images/projects/interview-capsule/interview-cover-sb22.png'
             ]
         ]
     ]

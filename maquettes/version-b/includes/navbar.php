@@ -2,10 +2,10 @@
     <div class="nav-container">
 
 
-        <a class="brand" href="<?php echo $basePath; ?>index.php" aria-label="SB22 - Accueil">
+        <a class="brand" href="<?php echo $basePath; ?>index.php" aria-label="S’B 22 - Accueil">
             <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white-transparent.png" alt="SB22">
             <div class="brand-text">
-                <span class="brand-name">SB22</span>
+                <span class="brand-name">S’B 22</span>
             </div>
         </a>
 

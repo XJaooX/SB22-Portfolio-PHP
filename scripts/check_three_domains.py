@@ -83,7 +83,9 @@ for slug in expected:
   section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
   markers=('Le projet','Son objectif','Notre intervention','Les réalisations') if slug in ('atelier-respira','interview-capsule') else ('Le client','Son objectif','Notre intervention','Les réalisations')
   for marker in markers:
-    if marker not in section:errors.append((slug,"missing editorial",marker))
+    if marker=="Les réalisations" and slug in ("kuba-home","plumes-social"):
+      if "sb22-case-carousel" not in section: errors.append((slug,"carousel missing"))
+    elif marker not in section:errors.append((slug,"missing editorial",marker))
   if 'plumes-social'==slug:
     for physical in ("plumes-1.jpg","plumes-2.jpg","plumes-3.jpg","plumes-4.jpg"):
       if physical in section:errors.append((slug,"physical media leaked",physical))
@@ -98,6 +100,18 @@ if 'kuba-carousel-cover.jpg' not in homepage:errors.append(("home","black cover 
 if 'sb22-home-domains' not in homepage:errors.append(("home","category navigation missing"))
 if len(live)!=6:errors.append(("unexpected live pages",len(live)))
 if homepage.count('class="pr-rail-card')!=5:errors.append(("home","expected five cards"))
+for slug, expected_carousels in (("kuba-home",1),("plumes-social",2)):
+  section=text.split('id="project-'+slug+'"',1)[-1].split('</article>',1)[0]
+  if section.count('data-sb22-carousel')!=expected_carousels:
+    errors.append((slug,"expected carousels",expected_carousels))
+if 'https://www.instagram.com/kubahome_officiel/' not in text: errors.append(("kuba","instagram URL missing"))
+kuba_modal=(ROOT/"includes/case-modals/kuba-home.php").read_text(encoding="utf-8")
+if 'src="https://www.instagram.com/kubahome_officiel/embed/"' not in kuba_modal:errors.append(("kuba","real Instagram embed missing"))
+if 'sb22-instagram-panel' in kuba_modal:errors.append(("kuba","old static mock still present"))
+
+if 'sb22-carousels.js' not in text or 'sb22-carousels.css' not in text: errors.append(("carousels","assets missing"))
+if "SB22 AGENCY" in (ROOT/"pages/contact/merci.html").read_text(encoding="utf-8"):
+  errors.append(("brand","legacy footer text"))
 if "05 projets" not in homepage:errors.append(("home","counter not updated"))
 if "Rym / Atelier RESPIRA" not in text:errors.append(("rym","incorrect name"))
 if "SB22 Agency" in homepage or "SB22 Agency" in text:errors.append(("brand","incorrect public identity"))

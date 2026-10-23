@@ -1,7 +1,7 @@
 <?php
 $basePath = '';
 $currentPage = 'accueil';
-$pageTitle = 'Portfolio — SB22';
+$pageTitle = 'Portfolio — S’B 22';
 $bodyClass = 'portfolio-immersive';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','showcase-cover.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
@@ -11,9 +11,9 @@ require __DIR__ . '/includes/navbar.php';
 <main class="pr-home sb22-home" id="top">
     <aside class="pr-rail" aria-label="Présentation et projets">
         <div class="pr-rail-top">
-            <p class="sb22-home-kicker">SB22 <span>· Portfolio</span></p>
+            <p class="sb22-home-kicker">S’B 22 <span>· Portfolio</span></p>
             <h1 class="sb22-home-title">Chaque projet raconte <em>une histoire.</em></h1>
-            <p class="pr-rail-intro">Des publications aux campagnes, en passant par les identités visuelles, les interviews et les vidéos : découvrez comment SB22 donne vie aux projets de ses clients.</p>
+            <p class="pr-rail-intro">Des publications aux campagnes, en passant par les identités visuelles, les interviews et les vidéos : découvrez comment S’B 22 donne vie aux projets de ses clients.</p>
         </div>
         <div class="pr-rail-projects" aria-label="Choisir un projet">
             <div class="pr-rail-label"><span>Projets sélectionnés</span><span>05 projets</span></div>
@@ -57,7 +57,7 @@ require __DIR__ . '/includes/navbar.php';
             <p id="pr-stage-category">Publications &amp; stratégie éditoriale</p>
             <a class="pr-stage-cta" id="pr-stage-link" href="pages/projets/projets.php#project-kuba-home">Découvrir le projet <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
-    <nav class="sb22-home-domains" aria-label="Explorer nos trois domaines">
+    <nav class="sb22-home-domains" aria-label="Explorer nos domaines">
     <a href="pages/projets/projets.php?domaine=social-media">Social Media</a>
     <a href="pages/projets/projets.php?domaine=design-graphique">Design graphique</a>
     <a href="pages/projets/projets.php?domaine=meta-ads">Meta Ads</a>

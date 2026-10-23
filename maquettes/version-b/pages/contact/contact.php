@@ -1,7 +1,7 @@
 <?php
 $basePath = '../../';
 $currentPage = 'contact';
-$pageTitle = 'Contact — SB22';
+$pageTitle = 'Contact — S’B 22';
 $bodyClass = 'portfolio-inner-page';
 $styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
@@ -25,7 +25,7 @@ require __DIR__ . '/../../includes/navbar.php';
                     </div>
                 </div>
             </div>
-            <div class="contact-bottom-text"><strong>SB22</strong><p>France · Luxembourg · Belgique</p></div>
+            <div class="contact-bottom-text"><strong>S’B 22</strong><p>France · Luxembourg · Belgique</p></div>
         </div>
         <div class="contact-form-box">
                             <div class="form-note" role="note"><span>i</span><p>Le formulaire est en cours de configuration. Aucun message n’est envoyé pour le moment. Contactez-nous directement à contact@sb22agency.com.</p></div>
