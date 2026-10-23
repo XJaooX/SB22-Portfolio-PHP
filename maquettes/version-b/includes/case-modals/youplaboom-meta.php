@@ -9,15 +9,15 @@
         <header class="book-case-heading">
             <p class="book-overline">Petite enfance / 2026</p>
             <h2>Youplaboom</h2>
-            <p>Développer la visibilité locale de la microcrèche.</p>
-            <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
+            <p>Pour la micro-crèche Youplaboom, située à Yutz, S’B 22 intervient dans le développement de sa visibilité locale à travers la création de contenus pour les réseaux sociaux, la réalisation d’une vidéo promotionnelle et la mise en place d’une campagne publicitaire Meta Ads. L’objectif est de présenter la structure aux familles et de favoriser les demandes de renseignements et d’inscription.</p>
+            <span class="book-case-category">Réseaux sociaux · Vidéo · Meta Ads</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" alt="Présentation du projet Youplaboom" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Youplaboom est une structure d’accueil dédiée à la petite enfance qui s’adresse aux familles de son secteur.</p></div><div><span>Son objectif</span><p>Présenter la microcrèche et son environnement aux parents afin de susciter des prises de contact et des demandes d’information.</p></div><div><span>Notre intervention</span><p>Création d’une vidéo promotionnelle au format vertical pour une campagne Meta Ads sur Facebook et Instagram.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Youplaboom est une structure d’accueil dédiée à la petite enfance qui s’adresse aux familles de son secteur.</p></div><div><span>Son objectif</span><p>Présenter la microcrèche et son environnement aux parents afin de susciter des prises de contact et des demandes d’information.</p></div><div><span>Notre intervention</span><p>Création de contenus pour les réseaux sociaux, réalisation d’une vidéo promotionnelle et campagne Meta Ads pour développer les demandes d’inscription.</p></div></div></section>
         <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
         <div class="sb22-video-copy">
-            <span>Les réalisations · en vidéo</span><h3>La campagne vidéo Meta Ads</h3>
-            <p>Vidéo publicitaire verticale, également adaptée à une diffusion au format Reel.</p>
+            <span>Les réalisations · en vidéo</span><h3>Vidéo promotionnelle · Réseaux sociaux et Meta Ads</h3>
+            <p>Contenu vidéo pour les réseaux sociaux, dans le cadre de la communication locale de Youplaboom.</p>
         </div>
         <div class="sb22-video-container">
             <video controls playsinline preload="metadata" poster="../../assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" aria-label="La campagne vidéo Meta Ads">

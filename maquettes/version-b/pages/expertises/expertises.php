@@ -3,7 +3,7 @@ $basePath = '../../';
 $currentPage = 'expertises';
 $pageTitle = 'Domaines d’intervention — S’B 22';
 $bodyClass = 'portfolio-inner-page';
-$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
+$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
 require __DIR__ . '/../../includes/header.php';
 require __DIR__ . '/../../includes/navbar.php';

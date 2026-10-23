@@ -9,11 +9,11 @@
         <header class="book-case-heading">
             <p class="book-overline">Aménagement intérieur / 2026</p>
             <h2>Kuba Home</h2>
-            <p>Une vitrine digitale premium pour les créations de Kuba Home.</p>
+            <p>Pour Kuba Home, spécialiste de l’aménagement intérieur au Luxembourg, S’B 22 accompagne le développement d’une vitrine digitale premium sur Instagram, avec une diffusion des contenus sur Facebook. Notre intervention comprend la définition d’une ligne éditoriale, la création de publications, l’organisation des contenus et le suivi de la communication afin de valoriser les réalisations et le savoir-faire de l’entreprise.</p>
             <span class="book-case-category">Social Media Management</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="Présentation du projet Kuba Home" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Kuba Home présente des projets d’aménagement intérieur, notamment des cuisines, salles de bains et dressings.</p></div><div><span>Son objectif</span><p>Mettre en valeur les réalisations et le savoir-faire de l’enseigne auprès d’une clientèle sensible au design et à la qualité des aménagements.</p></div><div><span>Notre intervention</span><p>Conception de la ligne éditoriale, création de publications visuelles et préparation de contenus adaptés à Instagram et Facebook.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Kuba Home présente des projets d’aménagement intérieur, notamment des cuisines, salles de bains et dressings.</p></div><div><span>Son objectif</span><p>Mettre en valeur les réalisations et le savoir-faire de l’enseigne auprès d’une clientèle sensible au design et à la qualité des aménagements.</p></div><div><span>Notre intervention</span><p>Définition de la ligne éditoriale, création et organisation des publications, diffusion sur Facebook et suivi de la communication Instagram.</p></div></div></section>
         <div class="book-case-media sb22-enhanced-gallery">
 <section class="sb22-instagram-embed-panel" aria-label="Instagram officiel de Kuba Home">
   <div class="sb22-instagram-embed-heading">

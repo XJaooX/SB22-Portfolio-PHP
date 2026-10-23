@@ -3,7 +3,7 @@ $basePath = '';
 $currentPage = 'accueil';
 $pageTitle = 'Portfolio — S’B 22';
 $bodyClass = 'portfolio-immersive';
-$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','showcase-cover.css','maquette-watermark.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
+$styles = ['style.css','portfolio-layout.css','design-unified.css','brand-official.css','showcase-cover.css','feedback-sebaa.css','feedback-final.css','feedback-wow.css'];
 $scripts = ['main.js','feedback-final.js','feedback-wow.js'];
 require __DIR__ . '/includes/header.php';
 require __DIR__ . '/includes/navbar.php';
@@ -13,10 +13,11 @@ require __DIR__ . '/includes/navbar.php';
         <div class="pr-rail-top">
             <p class="sb22-home-kicker">S’B 22 <span>· Portfolio</span></p>
             <h1 class="sb22-home-title">Chaque projet raconte <em>une histoire.</em></h1>
-            <p class="pr-rail-intro">Des publications aux campagnes, en passant par les identités visuelles, les interviews et les vidéos : découvrez comment S’B 22 donne vie aux projets de ses clients.</p>
+            <p class="pr-rail-intro">S’B 22 est une agence de communication 360° et de relations publiques, qui accompagne les entreprises dans leur visibilité, leur image de marque et leur stratégie de communication. Notre approche associe stratégie, créativité et relations humaines.</p>
+            <p class="sb22-home-services">Réseaux sociaux · Relations publiques · Création graphique · Signalétique · Campagnes publicitaires · Production vidéo</p>
         </div>
         <div class="pr-rail-projects" aria-label="Choisir un projet">
-            <div class="pr-rail-label"><span>Projets sélectionnés</span><span>05 projets</span></div>
+            <div class="pr-rail-label"><span>5 projets à découvrir</span><a class="sb22-more-realizations" href="pages/projets/projets.php">Voir les 8 réalisations →</a></div>
             <a class="pr-rail-card is-active" href="pages/projets/projets.php#project-kuba-home" data-showcase-trigger data-image="assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" data-secondary="" data-name="Kuba Home" data-category="Publications &amp; stratégie éditoriale" data-sector="Aménagement intérieur" data-index="01">
     <span class="pr-rail-thumb"><img src="assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="" loading="lazy"></span>
     <span class="pr-rail-copy"><strong>Kuba Home</strong><small>Publications &amp; stratégie éditoriale</small></span>
@@ -29,9 +30,9 @@ require __DIR__ . '/includes/navbar.php';
     <span class="pr-rail-thumb"><img src="assets/images/projects/kid-fitness/kid-fitness-video-cover.jpg" alt="" loading="lazy"></span>
     <span class="pr-rail-copy"><strong>Kid Fitness Lexy</strong><small>Campagne Meta Ads &amp; vidéo</small></span>
     <span class="pr-rail-arrow" aria-hidden="true"><svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
-</a><a class="pr-rail-card " href="pages/projets/projets.php#project-youplaboom-meta" data-showcase-trigger data-image="assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" data-secondary="" data-name="Youplaboom" data-category="Vidéo promotionnelle" data-sector="Petite enfance" data-index="04">
+</a><a class="pr-rail-card " href="pages/projets/projets.php#project-youplaboom-meta" data-showcase-trigger data-image="assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" data-secondary="" data-name="Youplaboom" data-category="Réseaux sociaux, vidéo &amp; Meta Ads" data-sector="Petite enfance" data-index="04">
     <span class="pr-rail-thumb"><img src="assets/images/projects/youplaboom/youplaboom-meta-cover.jpg" alt="" loading="lazy"></span>
-    <span class="pr-rail-copy"><strong>Youplaboom</strong><small>Vidéo promotionnelle</small></span>
+    <span class="pr-rail-copy"><strong>Youplaboom</strong><small>Réseaux sociaux, vidéo &amp; Meta Ads</small></span>
     <span class="pr-rail-arrow" aria-hidden="true"><svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
 </a>
 <a class="pr-rail-card" href="pages/projets/projets.php?domaine=production-video#project-atelier-respira" data-showcase-trigger data-image="assets/images/projects/respira/respira-brand-cover.png" data-secondary="" data-name="Atelier RESPIRA" data-category="Création de contenus vidéo" data-sector="Bien-être et ateliers" data-index="05">

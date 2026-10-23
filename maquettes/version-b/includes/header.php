@@ -11,7 +11,7 @@ $bodyClass = $bodyClass ?? 'portfolio-inner-page';
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></title>
-<meta name="description" content="Portfolio S’B 22. Découvrez les publications, vidéos, créations graphiques et signalétique réalisées pour nos clients.">
+<meta name="description" content="S’B 22, agence de communication 360° et de relations publiques. Réseaux sociaux, campagnes Meta Ads, création graphique, signalétique et vidéo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">

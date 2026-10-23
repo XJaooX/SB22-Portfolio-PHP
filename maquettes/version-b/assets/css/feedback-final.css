@@ -255,3 +255,20 @@
         transition:none !important;
     }
 }
+
+/* Corrections finales : présentation des services et contact sans formulaire fictif. */
+.sb22-home-services{color:#dedede; font-size:11px; line-height:1.5; margin:6px 0 0; font-weight:600;}
+.sb22-contact-direct{display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:340px}
+.sb22-contact-direct h2{font-size:clamp(22px,2.5vw,37px);line-height:1.2;margin:0}
+.sb22-contact-direct p{line-height:1.7;margin:0;max-width:45ch}
+.sb22-contact-direct-action{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 22px;background:#222;color:white;text-decoration:none;border-radius:4px;width:fit-content;font-weight:600}
+.sb22-contact-direct-action:hover,.sb22-contact-direct-action:focus-visible{background:#444;color:#fff}
+.sb22-contact-direct-note{font-size:13px;color:#555}
+@media(max-width:850px){.sb22-contact-direct{min-height:unset;padding:26px 0}.sb22-home-services{font-size:10px}}
+
+/* Ensure selection label and link remain readable on the navy background. */
+.portfolio-immersive .sb22-home .pr-rail-label,
+.portfolio-immersive .sb22-home .pr-rail-label span,
+.portfolio-immersive .sb22-home .pr-rail-label a {color:#dce4f1 !important;opacity:1 !important;}
+.portfolio-immersive .sb22-home .pr-rail-label a{text-decoration:underline;text-underline-offset:3px;}
+.portfolio-immersive .sb22-home .pr-rail-label a:hover{color:#fff !important;}

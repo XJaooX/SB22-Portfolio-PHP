@@ -9,11 +9,11 @@
         <header class="book-case-heading">
             <p class="book-overline">Édition / 2026</p>
             <h2>Plumes de Cœur Éditions</h2>
-            <p>Faire connaître la maison d’édition et son univers sur les réseaux sociaux.</p>
+            <p>S’B 22 accompagne Plumes de Cœur Éditions dans sa communication sur Facebook et Instagram, à travers la création de publications valorisant les ouvrages, les auteurs, les actualités et les événements de la maison d’édition. L’objectif est de développer sa visibilité et de construire une communication cohérente avec son univers littéraire.</p>
             <span class="book-case-category">Social Media Management</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/plumes-de-coeur/whatsapp-20261023/presentation-01.jpg" alt="Présentation du projet Plumes de Cœur Éditions" loading="lazy"></figure>
-        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Plumes de Cœur Éditions est une maison d’édition qui valorise des auteurs, des ouvrages et une programmation culturelle.</p></div><div><span>Son objectif</span><p>Faire découvrir les livres, les auteurs et les actualités de la maison d’édition tout en construisant une présence reconnaissable sur les réseaux.</p></div><div><span>Notre intervention</span><p>Création de visuels et de publications éditoriales pour présenter les livres, les auteurs, les nouveautés et les événements.</p></div></div></section>
+        <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Plumes de Cœur Éditions est une maison d’édition qui valorise des auteurs, des ouvrages et une programmation culturelle.</p></div><div><span>Son objectif</span><p>Faire découvrir les livres, les auteurs et les actualités de la maison d’édition tout en construisant une présence reconnaissable sur les réseaux.</p></div><div><span>Notre intervention</span><p>Création de publications Facebook et Instagram pour les ouvrages, auteurs, actualités et événements, sans supports de signalétique.</p></div></div></section>
         <div class="book-case-media sb22-enhanced-gallery">
 <section class="book-case-section sb22-case-carousel" aria-label="Présentation de Plumes de Cœur" data-sb22-carousel>
 <div class="sb22-case-carousel-heading"><div><p class="sb22-carousel-overline">Sélection de créations</p><h3>Présentation de Plumes de Cœur</h3></div>

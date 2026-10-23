@@ -1,6 +1,6 @@
 <article data-reveal class="project-card kg-project-card sb22-domain-card" data-domain="<?php echo htmlspecialchars($case['domain'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" tabindex="0" role="button" data-project="<?php echo htmlspecialchars($case['id'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" aria-label="Découvrir <?php echo htmlspecialchars($case['name'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?> — <?php echo htmlspecialchars($case['domain'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>">
-<div class="kg-card-visuals"><img src="<?php echo $basePath . htmlspecialchars($case['image'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($case['name'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?> — réalisation SB22" loading="lazy"></div>
-<div class="kg-card-top"><span><?php echo htmlspecialchars($domains[$case['domain']]['label'] ?? $case['domain'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></span></div>
+<div class="kg-card-visuals"><img src="<?php echo $basePath . htmlspecialchars($case['image'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($case['name'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?> — réalisation S’B 22" loading="lazy"></div>
+<div class="kg-card-top"><span><?php echo htmlspecialchars($case['category_label'] ?? ($domains[$case['domain']]['label'] ?? $case['domain']), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></span></div>
 <div class="kg-card-bottom">
 <span class="kg-card-number"><?php echo htmlspecialchars($case['sector'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></span>
 <h2><?php echo htmlspecialchars($case['name'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></h2>

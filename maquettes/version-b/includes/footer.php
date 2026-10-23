@@ -7,14 +7,14 @@
 
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="SB22">
+                    <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white.png" alt="S’B 22">
                     <div class="footer-brand-text">
                         <span class="footer-brand-name">S’B 22</span>
                     </div>
                 </div>
 
                 <p class="footer-description">
-                    Agence de relations publiques et de communication, avec une approche humaine et stratégique.
+                    S’B 22 est une agence de communication 360° et de relations publiques, qui accompagne les entreprises dans leur visibilité, leur image de marque et leur stratégie de communication. Notre approche associe stratégie, créativité et relations humaines.
                 </p>
 
                 <div class="footer-contact">
@@ -28,7 +28,7 @@
                 <span class="footer-title">Navigation</span>
                 <a href="<?php echo $basePath; ?>index.php">Accueil</a>
                 <a href="<?php echo $basePath; ?>pages/agence/agence.php">À propos</a>
-                <a href="<?php echo $basePath; ?>pages/projets/projets.php">Projets sélectionnés</a>
+                <a href="<?php echo $basePath; ?>pages/projets/projets.php">Toutes les réalisations</a>
                 <a href="<?php echo $basePath; ?>pages/contact/contact.php">Contact</a>
             </div>
 

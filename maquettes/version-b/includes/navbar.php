@@ -3,7 +3,7 @@
 
 
         <a class="brand" href="<?php echo $basePath; ?>index.php" aria-label="S’B 22 - Accueil">
-            <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white-transparent.png" alt="SB22">
+            <img src="<?php echo $basePath; ?>assets/images/branding/sb22-logo-white-transparent.png" alt="S’B 22">
             <div class="brand-text">
                 <span class="brand-name">S’B 22</span>
             </div>
@@ -18,7 +18,6 @@
         </nav>
 
 
-        <span class="sb22-maquette-mark" role="note">MAQUETTE</span>
         <a class="nav-contact <?php echo $currentPage === 'contact' ? 'contact-active' : ''; ?>" href="<?php echo $basePath; ?>pages/contact/contact.php">
             <span>Nous contacter</span>
             <svg class="sb22-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>

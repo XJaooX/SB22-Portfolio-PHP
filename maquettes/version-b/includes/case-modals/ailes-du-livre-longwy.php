@@ -1,7 +1,7 @@
 <?php
 $projectId = htmlspecialchars($case['id'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $name = htmlspecialchars($case['name'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-$description = htmlspecialchars($case['description'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$description = htmlspecialchars(($case['full_description'] ?? $case['description']), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $domainTitle = htmlspecialchars($domains[$case['domain']]['label'] ?? $case['domain'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $image = htmlspecialchars($basePath . $case['image'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
@@ -22,7 +22,7 @@ $image = htmlspecialchars($basePath . $case['image'], ENT_QUOTES | ENT_SUBSTITUT
         <figure class="book-case-cover"><img src="<?php echo $image; ?>" alt="Présentation du projet <?php echo $name; ?>" loading="lazy"></figure>
         <section class="book-case-story" aria-label="Le projet en bref">
             <div class="sb22-case-context">
-                <div><span>Le projet</span><p><?php echo htmlspecialchars($case['context'] ?? $case['description'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></p></div>
+                <div><span>Le projet</span><p><?php echo htmlspecialchars($case['context'] ?? ($case['full_description'] ?? $case['description']), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></p></div>
                 <div><span>Son objectif</span><p><?php echo htmlspecialchars($case['objective'] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></p></div>
                 <div><span>Notre intervention</span><p><?php echo htmlspecialchars($case['intervention'] ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?></p></div>
             </div>

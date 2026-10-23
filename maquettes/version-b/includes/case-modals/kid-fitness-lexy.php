@@ -9,15 +9,15 @@
         <header class="book-case-heading">
             <p class="book-overline">Activités pour enfants / Janvier 2026</p>
             <h2>Kid Fitness Lexy</h2>
-            <p>Promouvoir les journées portes ouvertes et encourager les inscriptions.</p>
+            <p>Dans le cadre de la promotion des journées portes ouvertes de Kid Fitness Lexy, S’B 22 a réalisé des supports de communication adaptés aux réseaux sociaux, ainsi qu’un contenu vidéo promotionnel destiné à accompagner la campagne publicitaire Meta Ads. L’objectif était de faire connaître l’événement auprès des familles et d’encourager les inscriptions.</p>
             <span class="book-case-category">Campagnes publicitaires Meta Ads</span>
         </header>
         <figure class="book-case-cover"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" alt="Présentation du projet Kid Fitness Lexy" loading="lazy"></figure>
         <section class="book-case-story" aria-label="Le projet en bref"><div class="sb22-case-context"><div><span>Le client</span><p>Kid Fitness Lexy propose des activités sportives et ludiques destinées aux enfants et aux familles.</p></div><div><span>Son objectif</span><p>Faire connaître les journées portes ouvertes et présenter l’offre aux familles susceptibles d’être intéressées.</p></div><div><span>Notre intervention</span><p>Création d’un support graphique déclinable pour les publications et stories, ainsi que d’une vidéo promotionnelle liée à la campagne Meta Ads.</p></div></div></section>
         <div class="book-case-media"><section class="sb22-video-feature" aria-label="Vidéo publicitaire">
         <div class="sb22-video-copy">
-            <span>Les réalisations · en vidéo</span><h3>La vidéo publicitaire</h3>
-            <p>Visuel promotionnel et vidéo publicitaire mettant en avant l’événement.</p>
+            <span>Vidéo publicitaire · Meta Ads</span><h3>La vidéo publicitaire</h3>
+            <p>Vidéo promotionnelle liée à la campagne Meta Ads des journées portes ouvertes.</p>
         </div>
         <div class="sb22-video-container">
             <video controls playsinline preload="metadata" poster="../../assets/images/projects/kid-fitness/kid-fitness-video-cover.jpg" aria-label="La vidéo publicitaire">
@@ -25,7 +25,7 @@
               Votre navigateur ne prend pas en charge cette vidéo.
             </video>
         </div></section><section class="book-case-section" aria-label="Réalisations graphiques">
-        <h3>Les réalisations</h3>
+        <h3>Le visuel publicitaire</h3>
         <div class="book-case-media-grid"><figure class="book-case-figure"><img src="../../assets/images/projects/kid-fitness/kid-fitness-poster.jpg" loading="lazy" alt="Support graphique promotionnel de la campagne"><figcaption>Support graphique promotionnel de la campagne</figcaption></figure></div>
         </section></div>
         <nav class="book-case-bottom" aria-label="Projets précédent et suivant">
