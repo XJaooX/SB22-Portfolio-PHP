@@ -1,4 +1,4 @@
-<div class="project-modal" id="project-youplaboom-meta" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Youplaboom — Campagnes publicitaires Meta Ads">
+<div class="project-modal" id="project-youplaboom-meta" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Réalisations Youplaboom — Réseaux sociaux, vidéo et Meta Ads">
     <div class="project-modal-background" data-close-modal></div>
     <article class="project-modal-box book-modal-box">
         <div class="project-modal-top">

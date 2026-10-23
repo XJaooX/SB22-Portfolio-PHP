@@ -17,7 +17,7 @@ require __DIR__ . '/includes/navbar.php';
             <p class="sb22-home-services">Réseaux sociaux · Relations publiques · Création graphique · Signalétique · Campagnes publicitaires · Production vidéo</p>
         </div>
         <div class="pr-rail-projects" aria-label="Choisir un projet">
-            <div class="pr-rail-label"><span>5 projets à découvrir</span><a class="sb22-more-realizations" href="pages/projets/projets.php">Voir les 8 réalisations →</a></div>
+            <div class="pr-rail-label"><span>5 projets sélectionnés</span><a class="sb22-more-realizations" href="pages/projets/projets.php">Voir les 8 réalisations →</a></div>
             <a class="pr-rail-card is-active" href="pages/projets/projets.php#project-kuba-home" data-showcase-trigger data-image="assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" data-secondary="" data-name="Kuba Home" data-category="Publications &amp; stratégie éditoriale" data-sector="Aménagement intérieur" data-index="01">
     <span class="pr-rail-thumb"><img src="assets/images/projects/kuba/kuba-whatsapp/kuba-carousel-cover.jpg" alt="" loading="lazy"></span>
     <span class="pr-rail-copy"><strong>Kuba Home</strong><small>Publications &amp; stratégie éditoriale</small></span>

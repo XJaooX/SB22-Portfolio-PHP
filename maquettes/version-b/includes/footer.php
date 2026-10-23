@@ -61,7 +61,8 @@
     </div>
 </footer>
 <?php foreach ($scripts as $script): ?>
-<script src="<?php echo $basePath; ?>assets/js/<?php echo htmlspecialchars($script, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>" defer></script>
+<?php $jsFile = __DIR__ . '/../assets/js/' . $script; ?>
+<script src="<?php echo $basePath; ?>assets/js/<?php echo htmlspecialchars($script, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>?v=<?php echo is_file($jsFile) ? filemtime($jsFile) : '1'; ?>" defer></script>
 <?php endforeach; ?>
 </body>
 </html>

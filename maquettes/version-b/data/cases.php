@@ -4,7 +4,7 @@ $cases = [
     ['id' => 'plumes-social','domain' => 'social-media','sector' => '02 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Publications Facebook et Instagram pour les ouvrages, auteurs et événements.','image' => 'assets/images/projects/plumes-de-coeur/whatsapp-20261023/presentation-01.jpg'],
     ['id' => 'plumes-signaletique','domain' => 'design-graphique','sector' => '03 / Édition','name' => 'Plumes de Cœur Éditions','description' => 'Conception graphique de l’habillage de vitrine et des panneaux.','image' => 'assets/images/projects/plumes-de-coeur/plumes-2.jpg'],
     ['id' => 'kid-fitness-lexy','domain' => 'meta-ads','sector' => '04 / Activités pour enfants','name' => 'Kid Fitness Lexy','description' => 'Visuel publicitaire et vidéo pour les portes ouvertes et Meta Ads.','image' => 'assets/images/projects/kid-fitness/kid-fitness-poster.jpg'],
-    ['id' => 'youplaboom-meta','domain' => 'meta-ads', 'category_label' => 'Réseaux sociaux · Vidéo · Meta Ads','sector' => '05 / Petite enfance','name' => 'Youplaboom','description' => 'Réseaux sociaux, vidéo et Meta Ads pour développer les inscriptions.','image' => 'assets/images/projects/youplaboom/youplaboom-meta-cover.jpg'],
+    ['id' => 'youplaboom-meta','domain' => 'meta-ads', 'domains' => ['social-media', 'meta-ads', 'production-video'], 'category_label' => 'Réseaux sociaux · Vidéo · Meta Ads','sector' => '05 / Petite enfance','name' => 'Youplaboom','description' => 'Réseaux sociaux, vidéo et Meta Ads pour développer les inscriptions.','image' => 'assets/images/projects/youplaboom/youplaboom-meta-cover.jpg'],
 
     [
         'id' => 'atelier-respira',

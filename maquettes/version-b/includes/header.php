@@ -16,7 +16,8 @@ $bodyClass = $bodyClass ?? 'portfolio-inner-page';
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <?php foreach ($styles as $style): ?>
-<link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/<?php echo htmlspecialchars($style, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>">
+<?php $cssFile = __DIR__ . '/../assets/css/' . $style; ?>
+<link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/<?php echo htmlspecialchars($style, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>?v=<?php echo is_file($cssFile) ? filemtime($cssFile) : '1'; ?>">
 <?php endforeach; ?>
 </head>
 <body class="<?php echo htmlspecialchars($bodyClass, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>">

@@ -267,3 +267,36 @@
 .portfolio-immersive .sb22-home .pr-rail-label a{color:#dce4f1!important;opacity:1!important}
 .portfolio-immersive .sb22-home .pr-rail-label a{text-decoration:underline;text-underline-offset:3px}
 .portfolio-immersive .sb22-home .pr-rail-label a:hover{color:#fff!important}
+
+/* Titres et navigation des projets, lisibles même sur une colonne étroite. */
+.portfolio-immersive .sb22-home .pr-rail-label {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+}
+/* Section des projets sélectionnés : contraste accessible sur le fond bleu nuit. */
+.portfolio-immersive .sb22-home .pr-rail-label,
+.portfolio-immersive .sb22-home .pr-rail-label span,
+.portfolio-immersive .sb22-home .pr-rail-label a {
+    color:#f2f6ff !important;
+    opacity:1 !important;
+    font-size:clamp(11px,1.12vw,13px);
+    line-height:1.45;
+}
+.portfolio-immersive .sb22-home .pr-rail-label a {
+    text-decoration:underline;
+    text-underline-offset:4px;
+}
+.portfolio-immersive .sb22-home .pr-rail-label a:hover,
+.portfolio-immersive .sb22-home .pr-rail-label a:focus-visible {
+    color:white !important;
+    text-decoration-thickness:2px;
+}
+.portfolio-immersive .sb22-home .pr-rail-label a:focus-visible {
+    outline:2px solid #fff;
+    outline-offset:4px;
+}
+@media (max-width:460px) {
+    .portfolio-immersive .sb22-home .pr-rail-label {flex-wrap:wrap;gap:6px;}
+    .portfolio-immersive .sb22-home .pr-rail-label a {font-size:11px;}
+}

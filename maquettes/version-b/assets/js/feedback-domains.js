@@ -42,7 +42,7 @@
     description.textContent=domains[domain].description;
     let visible=0;
     cards.forEach(card=>{
-      const show=domain==='tous' || card.dataset.domain===domain;
+      const show=domain==='tous' || (card.dataset.domains || card.dataset.domain).split(' ').includes(domain);
       card.hidden=!show;
       if (show) {
         card.classList.add('is-visible');

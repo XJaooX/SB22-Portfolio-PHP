@@ -24,7 +24,7 @@ require __DIR__ . '/../../includes/navbar.php';
                         <?php foreach ($domains as $slug => $domain): ?>
                         <?php
                         $total = $slug === 'tous' ? count($cases) : count(array_filter($cases, static function ($case) use ($slug) {
-                            return $case['domain'] === $slug;
+                            return in_array($slug, $case['domains'] ?? [$case['domain']], true);
                         }));
                         ?>
                         <button class="kg-filter-pill sb22-domain-filter<?php echo $slug === 'tous' ? ' active' : ''; ?>" type="button" data-domain-filter="<?php echo htmlspecialchars($slug, ENT_QUOTES, 'UTF-8'); ?>" data-domain-title="<?php echo htmlspecialchars($domain['title'], ENT_QUOTES, 'UTF-8'); ?>" data-domain-description="<?php echo htmlspecialchars($domain['description'], ENT_QUOTES, 'UTF-8'); ?>" aria-pressed="<?php echo $slug === 'tous' ? 'true' : 'false'; ?>"><span><?php echo htmlspecialchars($domain['label'], ENT_QUOTES, 'UTF-8'); ?></span><small><?php echo sprintf('%02d', $total); ?></small></button>

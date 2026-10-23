@@ -8,7 +8,7 @@ return [
     'social-media' => [
         'label' => 'Social Media Management',
         'title' => 'Une communication pensée pour les réseaux.',
-        'description' => 'Publications et lignes éditoriales pour Kuba Home et Plumes de Cœur Éditions.'
+        'description' => 'Publications, lignes éditoriales et communication sur les réseaux sociaux pour Kuba Home, Plumes de Cœur Éditions et Youplaboom.'
     ],
     'design-graphique' => [
         'label' => 'Design graphique & signalétique',
@@ -23,6 +23,6 @@ return [
     'production-video' => [
         'label' => 'Création de contenus vidéo',
         'title' => 'Des histoires, des événements et des savoir-faire en vidéo.',
-        'description' => 'Vidéos de l’Atelier RESPIRA, interviews et formats courts conçus pour donner vie aux projets.'
+        'description' => 'Vidéos de RESPIRA, interviews, Youplaboom et formats courts conçus pour donner vie aux projets.'
     ]
 ];
